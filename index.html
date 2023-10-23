@@ -42,25 +42,18 @@
             text-align: center;
             color: white;
         }
-
-        * {
-          box-sizing:border-box;  
+        .grid-container {
+            display:grid;
+            grid-template-columns:auto auto auto auto;
+            background-color:white;
         }
 
-        .box {
-            float: left;
-            padding: 20px;
-            width:25%;
-            background-color:hwb(120 3% 85%);
-            text-align: center;            
-        }
-
-        .icon-text {
-            margin-top: 0px;
-            color:black;
-            font-size: 25px;
-            text-align:center;
-            width:25%;
+        .grid-item {
+            background-color:black;
+            color:green;
+            font-size:25px;
+            text-align: center;
+            padding:10px;
         }
 
         .menu {
@@ -92,7 +85,6 @@
         <a href="Animations.html"> Animations</a>
         <a href="Classic.html"> Marketing</a>
         <a href="Gifs.html"> Gifs</a>
-        <a href="test.html">Test</a>
     </div>
 </head>
 <body>
@@ -101,34 +93,24 @@
         <p>Web Designer | Digital Marketer | Graphic Specialist</p>
     </header>
         <h2>Previous Work</h2>
-    <div>
-        <div class="box">
-            <img src="icons/video camera.png" width="120px" alt="icon of video camera">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="icons/video camera.png" width="120px" alt="icon of video camera">
+            </div>
+            <div class="grid-item">
+                <img src="icons/green brush.png" width="120px" alt="icon of paint brush">
+            </div>
+            <div class="grid-item">
+                <img src="icons/green picture.png" width="120px" alt="icon of picture frame">
+            </div>
+            <div class="grid-item">
+                <img src="icons/computer.png" width="120px" alt="computer icon">
+            </div>
+            <div class="grid-item">Videos</div>
+            <div class="grid-item">Animation</div>
+            <div class="grid-item">Classic</div>
+            <div class="grid-item">Gifs</div>
         </div>
-        <div class="box">
-            <img src="icons/green brush.png" width="120px" alt="icon of paint brush">
-        </div>
-        <div class="box">
-            <img src="icons/green picture.png" width="120px" alt="icon of picture frame">
-        </div>
-        <div class="box">
-            <img src="icons/computer.png" width="120px" alt="computer icon">
-        </div>   
-    </div>
-    <div>
-        <div class="icon-text box">
-            <p class="icon-text box">Videos</p>
-        </div>
-        <div class="box">
-            <p class="icon-text box">Animation</p>
-        </div>
-        <div class="box">
-            <p class="icon-text box">Classic</p>
-        </div>
-        <div class="box">
-            <p class="icon-text box">Gifs</p>
-        </div>
-    </div>
 </body>
 
 <footer>© 2035 by Michelle Green</footer>
