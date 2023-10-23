@@ -29,13 +29,6 @@
             font-size:30px;
         }
 
-        h2 {
-            text-align:center;
-            font-size:25px;
-            margin-top:50px;
-            padding: 80px;
-        }
-
         footer {
             font-family:'Times New Roman';
             font-size: 10px;
@@ -43,25 +36,6 @@
             color: white;
         }
 
-        * {
-          box-sizing:border-box;  
-        }
-
-        .box {
-            float: left;
-            padding: 20px;
-            width:25%;
-            background-color:hwb(120 3% 85%);
-            text-align: center;            
-        }
-
-        .icon-text {
-            margin-top: 0px;
-            color:black;
-            font-size: 25px;
-            text-align:center;
-            width:25%;
-        }
 
         .menu {
             margin: 0 px;
@@ -84,6 +58,20 @@
             text-decoration: none;
         }
 
+        .grid-container {
+            display:grid;
+            background-color:white;
+        }
+
+        .grid-item {
+            background-color:black;
+            color:green;
+            font-size:25px;
+            text-align: center;
+            padding:10px;
+        }
+
+
     </style>
     <div class="menu">
         <a href="index.html"> Home</a>
@@ -101,32 +89,16 @@
     </header>
         <h2>Previous Work</h2>
     <div>
-        <div class="box">
             <img src="icons/video camera.png" width="120px" alt="icon of video camera">
-        </div>
-        <div class="box">
             <img src="icons/green brush.png" width="120px" alt="icon of paint brush">
-        </div>
-        <div class="box">
             <img src="icons/green picture.png" width="120px" alt="icon of picture frame">
-        </div>
-        <div class="box">
             <img src="icons/computer.png" width="120px" alt="computer icon">
-        </div>   
     </div>
-    <div>
-        <div class="icon-text box">
-            <p class="icon-text box">Videos</p>
-        </div>
-        <div class="box">
-            <p class="icon-text box">Animation</p>
-        </div>
-        <div class="box">
-            <p class="icon-text box">Classic</p>
-        </div>
-        <div class="box">
-            <p class="icon-text box">Gifs</p>
-        </div>
+    <div class="grid-container">
+        <div class="grid-item">Videos</div>
+        <div class="grid-item">Animation</div>
+        <div class="grid-item">Classic</div>
+        <div class="grid-item">Gifs</div>
     </div>
 </body>
 
