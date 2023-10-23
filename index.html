@@ -26,6 +26,12 @@
 
         p {
             text-align:center;
+            font-size:36px;
+        }
+
+        .p2 {
+            text-align:center;
+            display:flexbox;
             font-size: 30px;
         }
 
@@ -45,9 +51,9 @@
 
         .box {
             float: left;
-            padding: 5px;
+            padding: 50px;
             box-sizing:border-box;
-            width: 25%;
+            width:25%;
             background-color:green;            
             box-shadow: 0px 0px 10px #a4a0a080;
         }
@@ -96,17 +102,33 @@
         <p>Web Designer | Digital Marketer | Graphic Specialist</p>
     </header>
     <h2>Previous Work</h2>
-    <div class="box">
-        <img src="icons/video camera.png" width="100px" alt="icon of video camera">
-        <img src="icons/green brush.png" width="100px" alt="icon of paint brush">
-        <img src="icons/green picture.png" width="100px" alt="icon of picture frame">
-        <img src="icons/computer.png" width="100px" alt="computer icon">
-    </div>     
-    <div class="icon-text">
-        <p>Videos</p>
-        <p>Animation</p>
-        <p>Classic</p>
-        <p>Gifs</p>
+    <div>
+        <div class="box">
+            <img src="icons/video camera.png" alt="icon of video camera">
+        </div>
+        <div class="box">
+            <img src="icons/green brush.png" alt="icon of paint brush">
+        </div>
+        <div class="box">
+            <img src="icons/green picture.png" alt="icon of picture frame">
+        </div>
+        <div class="box">
+            <img src="icons/computer.png" alt="computer icon">
+        </div>   
+    </div>
+    <div>
+        <div class="box">
+            <p class="icon-text box">Videos</p>
+        </div>
+        <div class="box">
+            <p class="icon-text box">Animation</p>
+        </div>
+        <div class="box">
+            <p class="icon-text box">Classic</p>
+        </div>
+        <div class="box">
+            <p class="icon-text box">Gifs</p>
+        </div>
     </div>
 </body>
 
