@@ -35,6 +35,7 @@
 
         .grid-container {
             display:grid;
+            grid-template-columns:auto auto auto auto;
             background-color:white;
         }
 
@@ -58,13 +59,19 @@
     </div>
 </head>
 <body>  
-    <div>
-        <img src="icons/video camera.png" width="120px" alt="icon of video camera">
-        <img src="icons/green brush.png" width="120px" alt="icon of paint brush">
-        <img src="icons/green picture.png" width="120px" alt="icon of picture frame">
-        <img src="icons/computer.png" width="120px" alt="computer icon">
-    </div>
     <div class="grid-container">
+        <div class="grid-item">
+            <img src="icons/video camera.png" width="120px" alt="icon of video camera">
+        </div>
+        <div class="grid-item">
+            <img src="icons/green brush.png" width="120px" alt="icon of paint brush">
+        </div>
+        <div class="grid-item">
+            <img src="icons/green picture.png" width="120px" alt="icon of picture frame">
+        </div>
+        <div class="grid-item">
+            <img src="icons/computer.png" width="120px" alt="computer icon">
+        </div>
         <div class="grid-item">Videos</div>
         <div class="grid-item">Animation</div>
         <div class="grid-item">Classic</div>
