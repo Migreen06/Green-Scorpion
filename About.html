@@ -32,7 +32,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -78,6 +78,21 @@
             font-size: 20px;
             font-family: Gill Sans;
         }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+
     </style>
 
     <div class="menu">
@@ -116,7 +131,7 @@
         <h2>About Me</h2>
     </div>
     <div class="container2">
-        <video src="About Me.mp4" type="video/mp4" controls width="640px" height="360px">
+        <video src="About Me.mp4" type="video/mp4" controls width="auto" height="auto">
         </video>
     </div>
 </body>
