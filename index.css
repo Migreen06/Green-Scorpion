@@ -79,3 +79,23 @@
  li {
      list-style-type: none;
  }
+
+ @media screen and (max-width: 600px) {
+     .grid-container {
+         flex-direction: column;
+         align-items: center;
+     }
+     nav {
+            flex-direction: column;
+            align-items: center;
+            background-color:greenyellow
+     }
+     nav:hover {
+            background-color: green;
+            display:none;
+            position:absolute;
+            top:0;
+            width:100%;
+        }
+              
+ }
