@@ -47,6 +47,7 @@
      background-color: black;
      color: green;
      font-size: 25px;
+     flex-wrap: wrap;
      text-align: center;
  }
 
