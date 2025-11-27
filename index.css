@@ -41,13 +41,13 @@
      display: flex;
      max-width: 100vw;
      justify-content: space-around;
+        flex-wrap: wrap;
  }
 
  .grid-item {
      background-color: black;
      color: green;
      font-size: 25px;
-     flex-wrap: wrap;
      text-align: center;
  }
 
