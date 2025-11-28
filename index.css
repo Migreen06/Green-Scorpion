@@ -96,6 +96,7 @@
      nav {
          background-color: darkgreen;
          display: none;
+         width:200px;
          position: absolute;
      }
 
@@ -105,7 +106,7 @@
          padding: 12px 25px;
      }
 
-     a:hover {
+     a:hover nav:hover{
          background-color: lawngreen;
      }
 
