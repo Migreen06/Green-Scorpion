@@ -93,13 +93,12 @@
          background-color: darkgreen;
          display: none;
          position: absolute;
-         width: 60%;
      }
 
      nav a {
          color: white;
          display: block;
-         padding: 12px 16px;
+         padding: 12px 20px;
      }
 
      a:hover nav {
