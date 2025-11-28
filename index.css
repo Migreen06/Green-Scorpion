@@ -94,14 +94,15 @@
      }
 
      nav {
-         background-color: darkgreen;
+         background-color:rgba(203, 238, 199, .7);
          display: none;
          width:200px;
          position: absolute;
      }
 
      nav a {
-         color: white;
+         color: black;
+         font-size:2rem;
          display: block;
          padding: 12px 25px;
      }
@@ -114,9 +115,8 @@
          color: white;
         display:inline-flex;
          background-color: green;
-         font-size: 20px;
+         font-size: 2rem;
          border: none;
-         cursor: pointer;
-     }
+         padding: 10px 15px;}
 
  }
