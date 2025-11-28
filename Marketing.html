@@ -82,6 +82,17 @@
         li {
             list-style-type: none;
         }
+
+        @media (max-width: 600px) {
+            .menu nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu nav li {
+                margin: 10px 0;
+            }
+        }
     </style>
     <div class="menu">
         <nav>
