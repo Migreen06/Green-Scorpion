@@ -112,7 +112,11 @@
 
      button {
          color: white;
-        display: block;
+        display:inline-flex;
+         background-color: green;
+         font-size: 20px;
+         border: none;
+         cursor: pointer;
      }
 
  }
