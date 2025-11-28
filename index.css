@@ -85,6 +85,10 @@
          position: relative;
      }
 
+ .menu:hover nav {
+     display: block;
+ }
+
      nav {
          background-color: blue;
          display: none;
@@ -94,17 +98,13 @@
          padding: 12px 16px;
      }
 
-     .menu:hover nav {
-         display: block;
-     }
-
      nav a {
          color: white;
          display: block;
      }
 
-     a:hover {
-         background-color: blue;
+     a:hover nav {
+         background-color: rgb(0, 115, 255);
      }
 
      button {
