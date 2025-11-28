@@ -81,7 +81,7 @@
  }
 
  button {
-    display:none;
+     display: none;
  }
 
  @media screen and (max-width: 600px) {
@@ -94,29 +94,30 @@
      }
 
      nav {
-         background-color:rgba(203, 238, 199, .7);
+         background-color: rgba(203, 238, 199, .9);
          display: none;
-         width:200px;
+         width: 200px;
          position: absolute;
      }
 
      nav a {
          color: black;
-         font-size:2rem;
+         font-size: 2rem;
          display: block;
          padding: 12px 25px;
      }
 
-     a:hover nav:hover{
+     a:hover nav:hover {
          background-color: lawngreen;
      }
 
      button {
          color: white;
-        display:inline-flex;
+         display: inline-flex;
          background-color: green;
-         font-size: 2rem;
+         font-size: 2em;
          border: none;
-         padding: 10px 15px;}
+         padding: 10px 15px;
+     }
 
  }
