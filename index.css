@@ -80,6 +80,10 @@
      list-style-type: none;
  }
 
+ button {
+    display:none;
+ }
+
  @media screen and (max-width: 600px) {
      .menu {
          position: relative;
@@ -98,10 +102,10 @@
      nav a {
          color: white;
          display: block;
-         padding: 12px 20px;
+         padding: 12px 25px;
      }
 
-     a:hover nav {
+     a:hover {
          background-color: lawngreen;
      }
 
