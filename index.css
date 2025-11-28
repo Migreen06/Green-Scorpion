@@ -87,6 +87,7 @@
  @media screen and (max-width: 600px) {
      .menu {
          position: relative;
+         display:inline;
      }
 
      .menu:hover nav {
