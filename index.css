@@ -81,8 +81,6 @@
      box-sizing: border-box;
  }
 
-
-
  .main {
      display: flex;
      justify-content: space-evenly;
