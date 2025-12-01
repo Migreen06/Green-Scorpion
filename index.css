@@ -81,7 +81,7 @@
   }
 
   .gif-gallery {
-      flex: 25%;
+      flex: 50%;
       max-width: 100%;
   }
 
@@ -107,7 +107,11 @@
   }
 
   @media screen and (max-width: 600px) {
-      .menu {
+    .main {
+        flex-direction: column;
+        padding-left: 0;
+    }  
+    .menu {
           position: relative;
       }
 
