@@ -69,7 +69,7 @@
             text-align: left;
             font-size: 28px;
             color: white;
-            margin: 20px;
+            margin: 0 auto;
         }
 
         nav {
@@ -82,56 +82,58 @@
             list-style-type: none;
         }
 
+        .screenshots {
+            max-width:100vw;
+        }
         .metrics {
             max-width: 100vw;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 10px;
         }
 
         button {
-            display:none;
+            display: none;
         }
 
         @media screen and (max-width: 600px) {
-     .menu {
-         position: relative;
-     }
+            .menu {
+                position: relative;
+            }
 
-     .menu:hover nav {
-         display: block;
-     }
+            .menu:hover nav {
+                display: block;
+            }
 
-     nav {
-         background-color: rgba(203, 238, 199, .9);
-         display: none;
-         width: 200px;
-         position: absolute;
-     }
+            nav {
+                background-color: rgba(203, 238, 199, .9);
+                display: none;
+                width: 200px;
+                position: absolute;
+            }
 
-     nav a {
-         color: black;
-         font-size: 1.1em;
-         display: block;
-         padding: 12px 25px;
-     }
+            nav a {
+                color: black;
+                font-size: 1.1em;
+                display: block;
+                padding: 12px 25px;
+            }
 
-     a:hover nav:hover {
-         background-color: lawngreen;
-         transition: ease-in-out 0.3s;
-     }
+            a:hover nav:hover {
+                background-color: lawngreen;
+                transition: ease-in-out 0.3s;
+            }
 
-     button {
-         color: white;
-         display: inline-flex;
-         background-color: green;
-         font-size: 1em;
-         border: none;
-         padding: 10px 15px;
-     }
+            button {
+                color: white;
+                display: inline-flex;
+                background-color: green;
+                font-size: 1em;
+                border: none;
+                padding: 10px 15px;
+            }
 
- }
+        }
     </style>
     <div class="menu">
         <button>Menu</button>
@@ -154,10 +156,13 @@
         Metrics
     </h2>
     <div class="metrics">
-        <img src="images/Screenshot 2025-11-06 171013.png" alt="Marketing Metrics" width="600px">
+        <div class="screenshots">
+            <img src="images/Screenshot 2025-11-06 171013.png" alt="Marketing Metrics" width="600px">
             <img src="images/Screenshot 2025-11-11 212544.png" alt="Marketing Metrics" width="600px">
             <img src="images/Screenshot 2025-11-11 212643.png" alt="Marketing Metrics" width="600px">
             <img src="images/Screenshot 2025-11-11 212907.png" alt="Marketing Metrics" width="600px">
+        </div>
+        
     </div>
     <div class="marketing-list">
         <h2>Skills</h2>
