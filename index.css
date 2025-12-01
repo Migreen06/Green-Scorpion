@@ -70,8 +70,9 @@
  }
 
  .gif-gallery {
-    max-width: 100vw;
+     max-width: 100vw;
      justify-content: center;
+     padding: 5rem;
  }
 
  * {
@@ -127,6 +128,7 @@
          background-color: lawngreen;
          transition: ease-in-out 0.3s;
      }
+
      button {
          color: white;
          display: inline-flex;
