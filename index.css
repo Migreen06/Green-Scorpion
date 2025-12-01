@@ -72,15 +72,13 @@
 
 .main {
     display: flex;
-    align-content: center;
     flex-wrap: wrap;
-    padding-left: 30px;
 }
 
 .gif-gallery {
-    flex: auto;
+    flex: 25%;
     max-width: 50%;
-    padding-left:30px;
+    padding-left:60px;
 }
  * {
      box-sizing: border-box;
