@@ -77,11 +77,13 @@
   .main {
       display: flex;
       flex-wrap: wrap;
+      align-content: center;
       padding-left: 60px;
   }
 
   .gif-gallery {
       flex: 50%;
+      align-content: center;
       max-width: 100%;
   }
 
@@ -107,11 +109,12 @@
   }
 
   @media screen and (max-width: 600px) {
-    .main {
-        flex-direction: column;
-        padding-left: 0;
-    }  
-    .menu {
+      .main {
+          flex-direction: column;
+          padding-left: 0;
+      }
+
+      .menu {
           position: relative;
       }
 
