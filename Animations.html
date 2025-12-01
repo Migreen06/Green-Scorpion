@@ -65,52 +65,58 @@
             background-color: transparent;
             text-decoration: none;
         }
+
         li {
-            list-style-type:none;
+            list-style-type: none;
         }
 
         nav {
-            display:flex;
-            justify-content:space-between;
-            max-width:100vw;
+            display: flex;
+            justify-content: space-between;
+            max-width: 100vw;
         }
 
-@media screen and (max-width: 600px) {
-     .menu {
-         position: relative;
-     }
+        button {
+            display: none;
+        }
 
-     .menu:hover nav {
-         display: block;
-     }
+        @media screen and (max-width: 600px) {
+            .menu {
+                position: relative;
+            }
 
-     nav {
-         background-color: rgba(203, 238, 199, .9);
-         display: none;
-         width: 200px;
-         position: absolute;
-     }
+            .menu:hover nav {
+                display: block;
+            }
 
-     nav a {
-         color: black;
-         font-size: 1.1em;
-         display: block;
-         padding: 12px 25px;
-     }
+            nav {
+                background-color: rgba(203, 238, 199, .9);
+                display: none;
+                width: 200px;
+                position: absolute;
+            }
 
-     a:hover nav:hover {
-         background-color: lawngreen;
-         transition: ease-in-out 0.3s;
-     }
-     button {
-         color: white;
-         display: inline-flex;
-         background-color: green;
-         font-size: 1em;
-         border: none;
-         padding: 10px 15px;
-     }
- }
+            nav a {
+                color: black;
+                font-size: 1.1em;
+                display: block;
+                padding: 12px 25px;
+            }
+
+            a:hover nav:hover {
+                background-color: lawngreen;
+                transition: ease-in-out 0.3s;
+            }
+
+            button {
+                color: white;
+                display: inline-flex;
+                background-color: green;
+                font-size: 1em;
+                border: none;
+                padding: 10px 15px;
+            }
+        }
     </style>
     <div class="menu">
         <button>Menu</button>
