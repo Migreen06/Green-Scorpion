@@ -72,13 +72,13 @@
 
 .main {
     display: flex;
-    margin:0 auto;
+    align-content: center;
     flex-wrap: wrap;
     padding-left: 30px;
 }
 
 .gif-gallery {
-    flex: 50%;
+    flex: auto;
     max-width: 50%;
     padding-left:30px;
 }
