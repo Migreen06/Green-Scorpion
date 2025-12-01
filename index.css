@@ -127,7 +127,6 @@
          background-color: lawngreen;
          transition: ease-in-out 0.3s;
      }
-
      button {
          color: white;
          display: inline-flex;
@@ -136,5 +135,4 @@
          border: none;
          padding: 10px 15px;
      }
-
  }
