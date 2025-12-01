@@ -1,3 +1,7 @@
+  * {
+      box-sizing: border-box;
+  }
+  
  body {
      font-family: Cambria;
      margin: 0;
@@ -77,12 +81,11 @@
 
 .gif-gallery {
     flex: 25%;
-    max-width: 50%;
+    max-width: 30%;
     padding-left:60px;
 }
- * {
-     box-sizing: border-box;
- }
+
+
 
  img {
     margin-top: 8px;
