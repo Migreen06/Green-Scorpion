@@ -83,7 +83,6 @@
 
   .gif-gallery {
       flex: 50%;
-      align-content: center;
       max-width: 100%;
   }
 
