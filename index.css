@@ -70,11 +70,9 @@
  }
 
  .gif-gallery {
-     max-width: 100vw;
+     max-width: 100%;
      justify-content: space-around;
-     align-items: center;
      padding: 5% 10%;
-     margin: 0 auto;
  }
 
  * {
