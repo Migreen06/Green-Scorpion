@@ -63,8 +63,9 @@
      text-decoration: none;
  }
 
+
  a:visited {
-     color: white;
+     color: green;
      background-color: transparent;
      text-decoration: none;
  }
@@ -127,6 +128,12 @@
      a:hover nav:hover {
          background-color: lawngreen;
          transition: ease-in-out 0.3s;
+     }
+
+     a:active {
+         color: darkgreen;
+         background-color: transparent;
+         text-decoration: none;
      }
 
      button {
