@@ -74,13 +74,13 @@
     display: flex;
     margin:0 auto;
     flex-wrap: wrap;
-    padding: 10px 14px;
+    padding-left: 30px;
 }
 
 .gif-gallery {
     flex: 50%;
     max-width: 50%;
-    padding: 10px 14px;
+    padding-left:30px;
 }
  * {
      box-sizing: border-box;
