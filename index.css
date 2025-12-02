@@ -77,8 +77,9 @@
   .main {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       padding-left: 60px;
-      padding-right:60px;
+      justify-content: center;
   }
 
   .gif-gallery {
@@ -88,7 +89,8 @@
 
 
 
-  img, video {
+  img,
+  video {
       margin-top: 8px;
       vertical-align: middle;
   }
