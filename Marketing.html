@@ -91,7 +91,7 @@
 
         .metrics {
             max-width: 100%;
-            margin: 4rem;
+            margin: 2rem;
             display: flex;
         }
 
@@ -100,6 +100,11 @@
         }
 
         @media screen and (max-width: 600px) {
+            .metrics {
+                flex-direction: column;
+                align-items: center;
+                margin:0px;
+            }
             .menu {
                 position: relative;
             }
