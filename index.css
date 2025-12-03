@@ -76,8 +76,6 @@
 
   .main {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       padding-left: 60px;
       justify-content: center;
   }
