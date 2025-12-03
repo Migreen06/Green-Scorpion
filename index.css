@@ -156,4 +156,9 @@
           border: none;
           padding: 10px 15px;
       }
+
+    .gif-gallery {
+        margin-left:1rem;
+        margin-right:1rem;
+    }
   }
