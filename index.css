@@ -83,7 +83,6 @@
   }
 
   .gif-gallery {
-      flex-grow: 60%;
       max-width: 100%;
       align-items: center;
   }
