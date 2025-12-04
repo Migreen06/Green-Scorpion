@@ -83,8 +83,21 @@
         .dev-images {
             margin: 20px;
             }
+        .menu {
+            display:none;
+        }
+
+        @media (max-width:600px) {
+            .menu {
+        position:relative;            }
+        }
+        .menu:hover nav {
+            display:block;
+        }
+        
     </style>
     <div class="menu">
+            <button>Menu</button>
         <nav>
             <li><a href="index.html"> Home</a>
             </li>
