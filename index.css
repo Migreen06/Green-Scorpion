@@ -76,7 +76,7 @@
 
   .main {
       display: flex;
-      padding-left: 60px;
+      padding-left: 1rem;
   }
 
   .gif-gallery {
