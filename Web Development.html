@@ -47,7 +47,7 @@
 
         a:link {
             text-decoration: none;
-            color: white;
+            color: green;
         }
 
         a:visited {
@@ -110,6 +110,39 @@
             .menu:hover nav {
                 display: block;
             }
+            nav {
+          background-color: rgba(203, 238, 199, .9);
+          display: none;
+          width: 200px;
+          position: absolute;
+      }
+
+      nav a {
+          color: black;
+          font-size: 1.1em;
+          display: block;
+          padding: 12px 25px;
+      }
+
+      a:hover nav:hover {
+          background-color: lawngreen;
+          transition: ease-in-out 0.3s;
+      }
+
+      a:active {
+          color: darkgreen;
+          background-color: transparent;
+          text-decoration: none;
+      }
+
+      button {
+          color: white;
+          display: inline-flex;
+          background-color: green;
+          font-size: 1em;
+          border: none;
+          padding: 10px 15px;
+      }
         }
     </style>
     <div class="menu">
