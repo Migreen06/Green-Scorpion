@@ -133,6 +133,10 @@
       .category {
           border: grey solid 2px;
           padding: 10px;
+          text-align:center;
+          font-size:22px;
+          display:flex;
+          color:white;
       }
 
       @media screen and (max-width: 600px) {
