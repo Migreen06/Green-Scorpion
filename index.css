@@ -132,8 +132,8 @@
   }
 
   .category {
-      border: grey solid 2px;
-      padding: 10px;
+      border: black solid 2px;
+      padding: 10px 15px;
       text-align: center;
       font-size: 22px;
       background: linear-gradient(to bottom right, black, darkgreen);
