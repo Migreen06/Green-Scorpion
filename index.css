@@ -135,7 +135,7 @@
   .category {
       text-align: center;
       font-size: 28px;
-      display: flex;
+      display: grid;
   }
 
   @media screen and (max-width: 600px) {
