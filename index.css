@@ -124,11 +124,16 @@
       justify-content: space-evenly;
   }
 
-  .sub-metrics {
+  .sub-cat {
       margin: 1rem;
-      display:flex;
+      display: flex;
       justify-content: space-evenly;
       text-align: center;
+  }
+      .category {
+          border: grey solid 2px;
+          padding: 10px;
+      }
 
       @media screen and (max-width: 600px) {
           .metrics {
