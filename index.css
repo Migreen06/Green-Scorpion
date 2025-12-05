@@ -127,6 +127,7 @@
   .subcat {
       margin: 1rem;
       display: flex;
+      margin-top:5%;
       justify-content: space-evenly;
       text-align: center;
   }
@@ -135,7 +136,7 @@
       border: black solid 2px;
       padding: 10px 15px;
       text-align: center;
-      font-size: 22px;
+      font-size: 28px;
       background: linear-gradient(to bottom right, black, darkgreen);
       display: flex;
       color: white;
