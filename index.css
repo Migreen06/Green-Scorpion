@@ -124,74 +124,82 @@
       justify-content: space-evenly;
   }
 
-  @media screen and (max-width: 600px) {
-    .metrics {
-        flex-direction: column;
-        align-items: center;
-    }  
-    .main {
-          flex-direction: column;
-          padding-left: 0;
+  .sub-metrics {
+      margin: 1rem;
+      display:flex;
+      justify-content: space-evenly;
+      text-align: center;
+
+      @media screen and (max-width: 600px) {
+          .metrics {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          .main {
+              flex-direction: column;
+              padding-left: 0;
+          }
+
+          .menu {
+              position: relative;
+          }
+
+          .menu:hover nav {
+              display: block;
+          }
+
+          nav {
+              background-color: rgba(203, 238, 199, .9);
+              display: none;
+              width: 200px;
+              position: absolute;
+          }
+
+          nav a {
+              color: black;
+              font-size: 1.1em;
+              display: block;
+              padding: 12px 25px;
+          }
+
+          a:hover nav:hover {
+              background-color: lawngreen;
+              transition: ease-in-out 0.3s;
+          }
+
+          a:active {
+              color: darkgreen;
+              background-color: transparent;
+              text-decoration: none;
+          }
+
+          button {
+              color: white;
+              display: inline-flex;
+              background-color: green;
+              font-size: 1em;
+              border: none;
+              padding: 10px 15px;
+          }
+
+          .gif-gallery {
+              margin-left: 1rem;
+              margin-right: 1rem;
+          }
+
+          .metrics,
+          .screenshots {
+              flex-direction: column;
+              align-items: center;
+              max-width: 100%;
+          }
+
+          .marketing-list {
+              padding-left: 1rem
+          }
+
+
+
+
       }
-
-      .menu {
-          position: relative;
-      }
-
-      .menu:hover nav {
-          display: block;
-      }
-
-      nav {
-          background-color: rgba(203, 238, 199, .9);
-          display: none;
-          width: 200px;
-          position: absolute;
-      }
-
-      nav a {
-          color: black;
-          font-size: 1.1em;
-          display: block;
-          padding: 12px 25px;
-      }
-
-      a:hover nav:hover {
-          background-color: lawngreen;
-          transition: ease-in-out 0.3s;
-      }
-
-      a:active {
-          color: darkgreen;
-          background-color: transparent;
-          text-decoration: none;
-      }
-
-      button {
-          color: white;
-          display: inline-flex;
-          background-color: green;
-          font-size: 1em;
-          border: none;
-          padding: 10px 15px;
-      }
-
-      .gif-gallery {
-          margin-left: 1rem;
-          margin-right: 1rem;
-      }
-
-      .metrics, .screenshots {
-          flex-direction: column;
-          align-items: center;
-          max-width:100%;
-      }
-
-      .marketing-list {
-          padding-left: 1rem
-      }
-
-
-
-
-  }
