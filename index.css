@@ -76,7 +76,6 @@
 
   .main {
       display: flex;
-      max-width: 100%;
       padding-left: 2rem;
   }
 
