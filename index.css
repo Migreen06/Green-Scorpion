@@ -77,6 +77,8 @@
   .main {
       display: flex;
       padding-left: 2rem;
+      flex-wrap:wrap;
+      justify-content: space-around;
   }
 
   .gif-gallery {
