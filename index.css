@@ -81,6 +81,11 @@
       justify-content: space-around;
   }
 
+  section {
+        margin: 1rem;
+        align-items: center;
+  }
+
   .gif-gallery {
       align-items: center;
   }
