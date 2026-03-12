@@ -1,0 +1,273 @@
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        scale: 0%;
+        transform: translatex(150px);
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+
+body {
+    background: radial-gradient(circle, #064e3b, #022c22, #000000);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    color: lightgrey;
+}
+
+
+h1 {
+    font-weight: bold;
+    stroke: #000000;
+    color: white;
+    font-style: italic;
+}
+
+.web {
+    color: rgb(16 185 129);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-left: .25rem;
+}
+
+.logo {
+    display: flex;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header {
+    padding: 2rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(5, 10, 8, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+button {
+    background: radial-gradient(circle, #064e3b, #022c22, #000000);
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    max-width: 200px;
+}
+
+button:hover {
+    scale: 1.2;
+    transition: ease-in 0.3s;
+}
+
+.text-black {
+    display: flex;
+    color: black;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.w-10 {
+    background-color: rgb(16 185 129);
+    width: 2.5rem;
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: radial-gradient(circle, #064e3b, #022c22, #000000);
+    padding: 20px 10px;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px, #fff 0px 1px 2px;
+    max-width: 300px;
+    text-align: center;
+    view-timeline-name: --reveal;
+    view-timeline-axis: block;
+    animation: reveal linear both;
+    animation-timeline: --reveal;
+    animation-range: entry 5% entry 35%;
+}
+
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+nav {
+    text-align: right;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.group {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    font-weight: 500;
+    list-style: none;
+    gap: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-flex;
+}
+
+
+li {
+    color: rgb(16 185 129);
+}
+
+li:hover {
+    color: #0ac687b4;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    transition: ease-in 0.3s;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    max-width: 80rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    color: transparent;
+    line-height: 65px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    background-clip: text;
+    animation: slideInFromBottom 2s ease-in;
+    background-image: linear-gradient(to top, #3b82f6, #22c55e, #10b981);
+    background-image: linear-gradient(to bottom, #fff, #10b981);
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #10b981;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

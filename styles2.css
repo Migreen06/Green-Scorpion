@@ -1,0 +1,105 @@
+body {
+    /* Changed to a more "Scorpion" deep green for better contrast */
+    background: linear-gradient(to bottom right, #064e3b, #000000);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    color: #9ca3af;
+    /* Using a cleaner gray hex */
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* --- Header & Nav Logic --- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* This pushes Logo left and Links right */
+    align-items: center;
+    /* This centers them vertically */
+    text-align:center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    margin:0 auto;
+    width:auto;
+    gap: 1rem;
+    /* Replaces the broken calc(0.5rem * var...) */
+}
+
+.group h1 {
+    font-weight: 800;
+    color: white;
+    font-style: italic;
+    margin: 0;
+    justify-content: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.web {
+    color: rgb(16, 185, 129);
+    font-weight: 300;
+    align-items: center;
+    align-content:center;
+    font-size: 1rem;
+    font-style: normal;
+    margin-left: 0.5rem;
+}
+
+
+.w-10 {
+    background-color: rgb(16, 185, 129);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    flex-shrink: 0;
+    /* Prevents logo from squishing */
+}
+
+.text-black {
+    color: black;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+
+ul {
+    display: flex;
+    gap: 2rem;
+    /* This gives your links space */
+    font-size: 0.75rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(16, 185, 129);
+}
+
+/* --- Main Content --- */
+
+main {
+    text-align: center;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    max-width: 80rem;
+}
