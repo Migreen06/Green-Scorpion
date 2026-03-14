@@ -164,7 +164,7 @@
             display: inline-flex;
         }
 
-        .service-card reveal> li {
+        .service-card reveal>li {
             color: white;
             text-decoration: none;
             display: flex;
@@ -343,9 +343,6 @@
 
 
         @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
 
 
             .section-line {
@@ -359,37 +356,38 @@
             }
 
             .hero {
-                width:100%;
+                width: 100%;
+            }
+
+            nav {
+                display:none;
+            }
+
+            .container {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 0 .5rem;
+            }
+
+            .service-card {
+                padding: 2rem;
+                overflow: hidden;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
             }
 
 
-            .container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 0 .5rem;
-        }
-            .service-card {
-            padding: 2rem;
-            overflow: hidden;
-            display:flex;
-            flex-direction:column;
-        }
+            .grid {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
 
-        nav {
-            display:hidden;
+            .services-section {
+                padding: 5rem 0;
+            }
         }
-
-        
-        .grid {
-            display: flex;
-            flex-direction:column;
-            gap: 2rem;
-        }
-
-        .services-section {
-            padding: 5rem 0;
-        }
-    }
     </style>
 </head>
 
@@ -534,7 +532,8 @@
                         </div>
                         <h4>Social <span style="color:#10b981;">Media</span></h4>
                         <p>By integrating creative content with precise audience modeling, we turn passive scrolling
-                            into active brand awareness and customer acquisition. We offer a wide array of social media marketing services contact us
+                            into active brand awareness and customer acquisition. We offer a wide array of social media
+                            marketing services contact us
                             for more info.</p>
                         <ul class="service-list">
                             <li>Instagram Ads</li>
@@ -565,8 +564,9 @@
                             </svg>
                         </div>
                         <h4>User <span style="color:#10b981;">Experience</span></h4>
-                        <p>Our array of UX services are essential for developing websites and programs that are accessible, reliable, and enjoyable for users.
-                            </p>
+                        <p>Our array of UX services are essential for developing websites and programs that are
+                            accessible, reliable, and enjoyable for users.
+                        </p>
                         <ul class="service-list">
                             <li>UX/UI Audit</li>
                             <li>Heat Mapping</li>
@@ -579,8 +579,9 @@
                             <img src="clicks.svg">
                         </div>
                         <h4>Landing <span style="color:#10b981;">Pages</span></h4>
-                        <p>Strategically designed landing pages built from the ground up. Custom made, responsive designs
-                        that optimize for both search engines and user engagement.</p>
+                        <p>Strategically designed landing pages built from the ground up. Custom made, responsive
+                            designs
+                            that optimize for both search engines and user engagement.</p>
                         <ul class="service-list">
                             <li>CMS Expertise</li>
                             <li>Product Highlights</li>
@@ -590,7 +591,7 @@
 
                     <div class="service-card reveal">
                         <div class="card-icon">
-                         <img src="brush.svg">
+                            <img src="brush.svg">
                         </div>
                         <h4>Graphic <span style="color:#10b981;">Design</span></h4>
                         <p>Visual storytelling that converts. We design high-impact digital assets, from social media
