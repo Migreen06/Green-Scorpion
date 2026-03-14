@@ -177,6 +177,7 @@ ul {
     gap: 15px;
     text-decoration: none;
     text-transform: uppercase;
+    justify-content:space-between;
     display: inline-flex;
 }
 
