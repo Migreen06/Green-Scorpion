@@ -69,12 +69,11 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-size: 1.5rem;
-    text-decoration: none;
 }
 
 header {
-    padding: 2rem 2rem;
-    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(5, 10, 8, 0.8);
     backdrop-filter: blur(10px);
 }
@@ -203,7 +202,7 @@ img {
     margin: auto;
 }
 
-h2 {
+h2, h1 {
     color: transparent;
     line-height: 65px;
     font-weight: 700;
@@ -270,4 +269,16 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+}
+#menu-toggle:checked+label+nav {
+    display: block;
+}
+
+label {
+    display: inline;
+    background: darkgreen;
+    font-size: 1em;
+    padding: .2em;
+    color: white;
+    border: none;
 }

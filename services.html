@@ -164,7 +164,7 @@
             display: inline-flex;
         }
 
-        li {
+        .service-card reveal> li {
             color: white;
             text-decoration: none;
             display: flex;
@@ -176,6 +176,8 @@
             align-items: center;
             padding-bottom: 2rem;
             display: flex;
+            text-align: right;
+                justify-content: space-between;
         }
 
 
@@ -238,7 +240,7 @@
             gap: 0.5rem;
         }
 
-      
+
 
         @keyframes reveal {
             from {
@@ -288,6 +290,32 @@
             text-decoration: none;
         }
 
+        li:hover {
+            color: #0ac687b4;
+            text-decoration-line: underline;
+            text-decoration-thickness: 3px;
+            transition: ease-in 0.3s;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #10b981;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
 
         .text-black {
             display: flex;
@@ -375,7 +403,7 @@
             <div class="container">
 
                 <div class="section-header reveal">
-                    <h2>Website SEO</h2>
+                    <h2>Web & SEO</h2>
                     <div class="section-line"></div>
                     <span class="font-mono text-accent">RANK_DOMINANCE</span>
                 </div>
@@ -403,23 +431,6 @@
                         <div class="card-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                            </svg>
-                        </div>
-                        <h4>Revenue <span style="color:#10b981;">Focus</span></h4>
-                        <p>Your website is your most valuable asset. We focus on the three pillars: Technical Integrity,
-                            Content Relevance, and User Experience.</p>
-                        <ul class="service-list">
-                            <li>Full Site Audits</li>
-                            <li>Crawl Error Fixing</li>
-                            <li>Semantic Optimization</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-card reveal">
-                        <div class="card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                             </svg>
                         </div>
@@ -432,14 +443,31 @@
                             <li>Index Management</li>
                         </ul>
                     </div>
+
+
+                    <div class="service-card reveal">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h4>Web <span style="color:#10b981;">Optimization</span></h4>
+                        <p>Your website is your most valuable asset. We focus on the three pillars: Technical Integrity,
+                            Content Relevance, and User Experience.</p>
+                        <ul class="service-list">
+                            <li>Full Site Audits</li>
+                            <li>Crawl Error Fixing</li>
+                            <li>Semantic Optimization</li>
+                        </ul>
+                    </div>
                 </div>
 
 
 
 
-
                 <div class="section-header reveal" style="margin-top: 10rem;">
-                    <h2>Marketing</h2>
+                    <h2>Marketing & Advertising</h2>
                     <div class="section-line"></div>
                     <span class="font-mono text-accent">Killer Campaigns</span>
                 </div>
@@ -450,9 +478,9 @@
                             <img src="shoppingcart.svg">
                         </div>
                         <h4>Google <span style="color:#10b981;">Ads</span></h4>
-                        <p>From GTM/GA4 architecture to algorithmic bidding, we engineer custom Google Ads ecosystems
-                            across all campaign types—built to scale conversions and maximize ROI through technical
-                            precision.</p>
+                        <p>Custom Google Ads architecture built for your specfic goals. From creation and strategy to
+                            algorithmic bidding, we manage every
+                            campaign type.</p>
                         <ul class="service-list">
                             <li>Ad Creation and Management</li>
                             <li>Google Analytics 4</li>
@@ -460,32 +488,14 @@
                         </ul>
                     </div>
 
-
-                    <div class="service-card reveal">
-                        <div class="card-icon">
-                            <img src="thumbsup.svg">
-                        </div>
-                        <h4>Social <span style="color:#10b981;">Media</span></h4>
-                        <p>By integrating
-                            creative content with
-                            precise audience modeling, we turn passive scrolling into active brand awareness and
-                            customer acquisition. We offer a wide array of social media marketing services contact us for more info.</p>
-                        <ul class="service-list">
-                            <li>Instagram Ads</li>
-                            <li>TikTok</li>
-                            <li>Facebook Ads</li>
-                        </ul>
-                    </div>
-
-
                     <div class="service-card reveal">
                         <div class="card-icon">
                             <img src="communicate.svg">
                         </div>
                         <h4>CRM &<span style="color:#10b981;"> Email</span></h4>
-                        <p>We utilize advanced CRM flows and sophisticated segmentation strategies to automate the
-                            customer journey, driving
-                            measurable revenue growth and brand loyalty. Various packages available.</p>
+                        <p>We utilize advanced CRM flows and segmentation strategies to automate the
+                            customer journey, driving measurable revenue growth and brand loyalty. Various packages
+                            available.</p>
                         <ul class="service-list">
                             <li>Klaviyo Flows and Emails</li>
                             <li>HubSpot Lead Nuturing</li>
@@ -495,49 +505,16 @@
 
                     <div class="service-card reveal">
                         <div class="card-icon">
-                            <img src="rocket.svg">
+                            <img src="thumbsup.svg">
                         </div>
-                        <h4>Product <span style="color:#10b981;">Launches</span></h4>
-                        <p>Full service product launch services from strategy to implimentation. By coordinating cross-functional workflows between
-                            creative, development, and sales,
-                            we ensure your product launches are flawless.</p>
+                        <h4>Social <span style="color:#10b981;">Media</span></h4>
+                        <p>By integrating creative content with precise audience modeling, we turn passive scrolling
+                            into active brand awareness and customer acquisition. We offer a wide array of social media marketing services contact us
+                            for more info.</p>
                         <ul class="service-list">
-                            <li>GTM Strategy</li>
-                            <li>Marketing Assets</li>
-                            <li>Execution</li>
-                        </ul>
-                    </div>
-
-
-                    <div class="service-card reveal">
-                        <div class="card-icon">
-                            <img src="graph.svg">
-                        </div>
-                        <h4>Data <span style="color:#10b981;">Analytics</span></h4>
-                        <p>Through rigorous funnel optimization,
-                            heatmapping, and attribution
-                            modeling, we identify and track customer behavior and marketing performance metrics.</p>
-                        <ul class="service-list">
-                            <li>Search Console</li>
-                            <li>Microsoft Clarity</li>
-                            <li>Google Data Studio</li>
-                        </ul>
-                    </div>
-
-
-                    <div class="service-card reveal">
-                        <div class="card-icon">
-                            <img src="store.svg">
-                        </div>
-                        <h4>E-commerce <span style="color:#10b981;">Management</span></h4>
-                        <p>Whether scaling
-                            5,000+ SKUs or executing
-                            complex platform migrations, we specialize in enterprise-level catalog management and site
-                            architecture.</p>
-                        <ul class="service-list">
-                            <li>Shopify Plus</li>
-                            <li>Woocommerce</li>
-                            <li>Netsuite</li>
+                            <li>Instagram Ads</li>
+                            <li>TikTok</li>
+                            <li>Facebook Ads</li>
                         </ul>
                     </div>
                 </div>
@@ -545,12 +522,10 @@
 
 
 
-
-                <!-- CRO SECTION -->
-                <div class="section-header reveal" style="margin-top: 10rem;">
-                    <h2>Conversion (CRO)</h2>
+                <div class="section-header reveal">
+                    <h2>Digital Design</h2>
                     <div class="section-line"></div>
-                    <span class="font-mono text-accent">ROI_MAXIMIZATION</span>
+                    <span class="font-mono text-accent">RANK_DOMINANCE</span>
                 </div>
 
                 <div class="grid">
@@ -565,15 +540,118 @@
                             </svg>
                         </div>
                         <h4>User <span style="color:#10b981;">Experience</span></h4>
-                        <p>Stop leaving money on the table. We identify friction points and optimize layouts to
-                            boost
-                            sales without increasing ad spend.</p>
+                        <p>UX services are essential for developing websites and programs that are accessible, reliable, and enjoyable for users.
+                            </p>
                         <ul class="service-list">
                             <li>UX/UI Audit</li>
                             <li>Heat Mapping</li>
-                            <li>Friction ID</li>
+                            <li>User Testing</li>
                         </ul>
                     </div>
+
+                    <div class="service-card reveal">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </div>
+                        <h4>Landing <span style="color:#10b981;">Pages</span></h4>
+                        <p>Strategically designed landing pages built from the ground up. Custom made, responsive designs
+                        that optimize for both search engines and user engagement.</p>
+                        <ul class="service-list">
+                            <li>CMS Expertise</li>
+                            <li>Product Highlights and Benefits</li>
+                            <li>Increased Conversions and Leads</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </div>
+                        <h4>Graphic <span style="color:#10b981;">Design</span></h4>
+                        <p>Visual storytelling that converts. We design high-impact digital assets, from social media
+                            graphics to promotional video
+                            elements.</p>
+                        <ul class="service-list">
+                            <li>Video Editing and Creation</li>
+                            <li>Photo Editing</li>
+                            <li>Social Media Graphics</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- CRO SECTION -->
+                <div class="section-header reveal" style="margin-top: 10rem;">
+                    <h2>Ecommerce and Sales</h2>
+                    <div class="section-line"></div>
+                    <span class="font-mono text-accent">ROI_MAXIMIZATION</span>
+                </div>
+
+                <div class="grid">
+                    <div class="service-card reveal">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h4>Strategy & Planning</h4>
+                        <p>Turn clicks into cash. We provide a clear roadmap of design and copy tweaks to instantly
+                            boost your conversion rate based on real behavior.</p>
+                        <ul class="service-list">
+                            <li>Actionable Roadmaps</li>
+                            <li>Behavior Analysis</li>
+                            <li>Profit Maximization</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="service-card reveal">
+                        <div class="card-icon">
+                            <img src="rocket.svg">
+                        </div>
+                        <h4>Product <span style="color:#10b981;">Launches</span></h4>
+                        <p>Full service product launch services from strategy to implimentation. Combining
+                            cross-functional workflows 
+                            creative, development, and sales,
+                            we ensure your product launches are flawless.</p>
+                        <ul class="service-list">
+                            <li>GTM Strategy</li>
+                            <li>Marketing Assets</li>
+                            <li>Execution</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="card-icon">
+                            <img src="store.svg">
+                        </div>
+                        <h4>E-<span style="color:#10b981;">commerce</span></h4>
+                        <p>Whether scaling
+                            5,000+ SKUs or executing
+                            complex platform migrations, we specialize in enterprise-level catalog management and site
+                            architecture.</p>
+                        <ul class="service-list">
+                            <li>Shopify Plus</li>
+                            <li>Woocommerce</li>
+                            <li>Netsuite</li>
+                        </ul>
+                    </div>
+
 
                     <div class="service-card reveal">
                         <div class="card-icon">
@@ -592,24 +670,6 @@
                             <li>Checkout Flow</li>
                             <li>Product Page UX</li>
                             <li>Cart Abandonment</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-card reveal">
-                        <div class="card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                            </svg>
-                        </div>
-                        <h4>Data-Driven Magic</h4>
-                        <p>Turn clicks into cash. We provide a clear roadmap of design and copy tweaks to instantly
-                            boost your conversion rate based on real behavior.</p>
-                        <ul class="service-list">
-                            <li>Actionable Roadmaps</li>
-                            <li>Behavior Analysis</li>
-                            <li>Profit Maximization</li>
                         </ul>
                     </div>
                 </div>
