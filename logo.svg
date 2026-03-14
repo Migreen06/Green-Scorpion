@@ -7,15 +7,6 @@
       }
 
       .cls-2 {
-        fill: #10b981;
-      }
-
-      .cls-3 {
-        letter-spacing: -.08em;
-      }
-
-      .cls-4 {
-        fill: #fff;
         font-family: Bahnschrift-Bold, Bahnschrift;
         font-size: 111px;
         font-variation-settings: 'wght' 700, 'wdth' 100;
@@ -23,8 +14,16 @@
         stroke: #000;
         stroke-miterlimit: 10;
       }
+
+      .cls-3 {
+        fill: #10b981;
+      }
+
+      .cls-4 {
+        letter-spacing: -.08em;
+      }
     </style>
   </defs>
-  <rect class="cls-2" x=".56" y="1.63" width="158.64" height="157.67" rx="12" ry="12"/>
-  <text class="cls-4" transform="translate(15.31 119.4)"><tspan class="cls-1" x="0" y="0">G</tspan><tspan class="cls-3" x="61.04" y="0">S</tspan></text>
+  <rect class="cls-3" x=".56" y="1.63" width="158.64" height="157.67" rx="12" ry="12"/>
+  <text class="cls-2" transform="translate(15.31 119.4)"><tspan class="cls-1" x="0" y="0">G</tspan><tspan class="cls-4" x="61.04" y="0">S</tspan></text>
 </svg>
