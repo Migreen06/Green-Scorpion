@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #006837;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Bahnschrift-Bold, Bahnschrift;
+        font-size: 134px;
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.1em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x=".56" y="1.63" width="158.64" height="157.67" rx="12" ry="12"/>
+  <text class="cls-2" transform="translate(1.9 127.57)"><tspan class="cls-4" x="0" y="0">G</tspan><tspan class="cls-3" x="73.69" y="0">S</tspan></text>
+</svg>
