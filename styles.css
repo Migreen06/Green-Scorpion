@@ -261,11 +261,6 @@ footer {
         align-items: center;
     }
 
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     ul {
         flex-direction: column;
         gap: 10px;
