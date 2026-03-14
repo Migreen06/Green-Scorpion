@@ -101,7 +101,7 @@
         }
 
         .hero {
-            padding: 8rem 0 4rem;
+            padding: 6rem 0 4rem;
             text-align: center;
             background: rgba(5, 10, 8, 0.8);
             backdrop-filter: blur(10px);
@@ -118,7 +118,7 @@
         }
 
         .hero p {
-            max-width: 700px;
+            max-width: 90%;
             margin: 0 auto;
             color: var(--text-dim);
             font-size: 1.3rem;
@@ -358,7 +358,11 @@
                 letter-spacing: -2px;
             }
 
-
+            .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 .5rem;
+        }
             .service-card {
             padding: 2rem;
             overflow: hidden;
@@ -370,7 +374,17 @@
             display:hidden;
         }
 
+        
+        .grid {
+            display: flex;
+            flex-direction:column;
+            gap: 2rem;
         }
+
+        .services-section {
+            padding: 5rem 0;
+        }
+    }
     </style>
 </head>
 
