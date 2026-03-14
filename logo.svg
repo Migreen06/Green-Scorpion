@@ -3,12 +3,12 @@
   <defs>
     <style>
       .cls-1 {
-        letter-spacing: -.1em;
+        letter-spacing: -.04em;
       }
 
       .cls-2 {
         font-family: Bahnschrift-Bold, Bahnschrift;
-        font-size: 111px;
+        font-size: 92px;
         font-variation-settings: 'wght' 700, 'wdth' 100;
         font-weight: 700;
         stroke: #000;
@@ -20,10 +20,10 @@
       }
 
       .cls-4 {
-        letter-spacing: -.08em;
+        letter-spacing: -.02em;
       }
     </style>
   </defs>
   <rect class="cls-3" x=".56" y="1.63" width="158.64" height="157.67" rx="23.51" ry="23.51"/>
-  <text class="cls-2" transform="translate(15.31 119.4)"><tspan class="cls-1" x="0" y="0">G</tspan><tspan class="cls-4" x="61.04" y="0">S</tspan></text>
+  <text class="cls-2" transform="translate(23.85 112.66)"><tspan class="cls-1" x="0" y="0">G</tspan><tspan class="cls-4" x="55.66" y="0">S</tspan></text>
 </svg>
