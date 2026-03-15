@@ -183,8 +183,18 @@ img {
     margin: auto;
 }
 
-h2,
+
 h1 {
+    line-height: 65px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    animation: slideInFromBottom 2s ease-in;
+}
+
+
+h2 {
     line-height: 65px;
     font-weight: 700;
     margin: 0;
