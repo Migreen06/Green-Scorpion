@@ -245,7 +245,11 @@ footer {
 }
 
 
-
+#menu-toggle,
+label,
+input {
+    display: none;
+}
 
 
 
