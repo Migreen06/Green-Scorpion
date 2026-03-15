@@ -333,15 +333,12 @@
 
             .menu ul {
                 display: none;
-                /* Hidden by default */
                 flex-direction: column;
                 position: absolute;
                 top: 60px;
-                right: 1rem;
                 background-color: rgb(1, 43, 1);
                 box-shadow: 2px 2px 10px 2px rgba(255, 255, 255, 0.5);
-                width: 200px;
-                z-index: 10;
+                z-index: 1;
             }
 
             #menu-toggle:checked~ul {
@@ -411,10 +408,11 @@
                 </div>
             </a>
 
+
+
             <div class="menu">
                 <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle">Menu
-                </label>
+                <label for="menu-toggle">Menu</label>
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -422,6 +420,8 @@
                     <li><a href="results.html">Results</a></li>
                 </ul>
             </div>
+
+
         </nav>
     </header>
 
