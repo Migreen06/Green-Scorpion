@@ -93,20 +93,6 @@ a {
     padding: 20px;
 }
 
-button {
-    background: radial-gradient(circle, #064e3b, #022c22, #000000);
-    padding: 10px 20px;
-    font-weight: 600;
-    margin:2rem auto;
-    border-radius: 8px;
-    max-width: 200px;
-}
-
-button:hover {
-    scale: 1.2;
-    transition: ease-in 0.3s;
-}
-
 
 .card-container {
     display: flex;
