@@ -254,6 +254,11 @@ input {
         padding: 0.5rem;
     }
 
+    .group>img {
+        padding-left:0px;
+        margin-left:0px;
+    }
+
     nav {
         align-items: center;
         padding: 0px;
