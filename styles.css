@@ -293,4 +293,8 @@ input {
         display: none;
     }
 
+
+    .content > p {
+        padding: 0 1rem;
+    }
 }
