@@ -185,7 +185,6 @@ img {
 
 
 h1 {
-    line-height: 65px;
     font-weight: 700;
     margin: 0;
     text-align: center;
@@ -195,11 +194,10 @@ h1 {
 
 
 h2 {
-    line-height: 65px;
     font-weight: 700;
     margin: 0;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     animation: slideInFromBottom 2s ease-in;
 }
 
@@ -224,10 +222,6 @@ footer {
     left: 0;
     background-color: #10b981;
     transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
 }
 
 
