@@ -185,13 +185,11 @@ img {
 
 h2,
 h1 {
-    color: transparent;
     line-height: 65px;
     font-weight: 700;
     margin: 0;
     text-align: center;
     font-size: 2.5rem;
-    background-clip: text;
     animation: slideInFromBottom 2s ease-in;
     background-image: linear-gradient(to top, #3b82f6, #22c55e, #10b981);
     background-image: linear-gradient(to bottom, #fff, #10b981);
