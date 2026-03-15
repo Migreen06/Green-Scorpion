@@ -257,7 +257,7 @@ input {
         padding: 0px;
         display: flex;
         text-align: left;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     label[for="menu-toggle"] {
