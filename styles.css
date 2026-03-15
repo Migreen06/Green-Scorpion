@@ -142,7 +142,7 @@ nav {
     padding-bottom: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -158,7 +158,7 @@ ul {
     gap: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    justify-content: space-between;
+    justify-content: space-around;
     display: inline-flex;
 }
 
