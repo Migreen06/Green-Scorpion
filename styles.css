@@ -246,11 +246,6 @@ input {
         overflow-x: hidden;
     }
 
-
-    .menu ul {
-        box-sizing: border-box;
-    }
-
     .logo {
         display: none;
     }
@@ -282,7 +277,6 @@ input {
         flex-direction: column;
         position: absolute;
         font-size: 1rem;
-        padding-left:0px;
         text-align: left;
         top: 60px;
         background: radial-gradient(circle, #064e3b, #022c22, #000000);
