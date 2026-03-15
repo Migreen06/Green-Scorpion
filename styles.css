@@ -104,23 +104,6 @@ button:hover {
     transition: ease-in 0.3s;
 }
 
-.text-black {
-    display: flex;
-    color: black;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-.w-10 {
-    background-color: rgb(16 185 129);
-    width: 2.5rem;
-    display: flex;
-    height: 2.5rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: .5rem;
-}
 
 .card-container {
     display: flex;
