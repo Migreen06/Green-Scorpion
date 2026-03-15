@@ -246,10 +246,6 @@ input {
         overflow-x: hidden;
     }
 
-    .menu ul {
-        box-sizing: border-box;
-        max-width: calc(100vw - 2rem);
-    }
 
     .logo {
         display: none;
@@ -265,14 +261,14 @@ input {
         padding: 0px;
         display: flex;
         text-align: left;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     label[for="menu-toggle"] {
         display: inline-block;
         color: white;
         font-size: 1rem;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem .5rem;
         cursor: pointer;
     }
 
@@ -281,7 +277,6 @@ input {
         flex-direction: column;
         position: absolute;
         font-size: 1rem;
-        width: 100px;
         text-align:left;
         top: 60px;
         background: radial-gradient(circle, #064e3b, #022c22, #000000);
