@@ -293,6 +293,10 @@ input {
     }
 
 
+    h1 {
+        font-size:3rem;
+    }
+
     .content > p {
         padding: 0 1rem;
     }
