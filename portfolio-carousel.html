@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Only Carousel</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: black;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 70%;
+            height: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .slide video {
+            max-width: 100%;
+            margin: 0 auto;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            color: white;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav label {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        input#slide1:checked~.slides {
+            transform: translateX(0%);
+        }
+
+        input#slide2:checked~.slides {
+            transform: translateX(-100%);
+        }
+
+        input#slide3:checked~.slides {
+            transform: translateX(-200%);
+        }
+
+        input#slide1:checked~.nav label[ for="slide1"
+        ],
+        input#slide2:checked~.nav label[ for="slide2"
+        ],
+        input#slide3:checked~.nav label[ for="slide3"
+
+        ] {
+            background: white;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="group">
+                    <img src="logo.svg" width="36" height="36">
+                    <div class="logo">
+                        GREEN <span style="color:#10b981;padding-left:.5rem;"> SCORPION</span>
+                    </div>
+                </div>
+            </a>
+    
+            <div class="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle">
+                    <img src="menu.svg">
+                </label>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="results.html">Results</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    <div class="carousel">
+        <input type="radio" name="slides" id="slide1" checked>
+        <input type="radio" name="slides" id="slide2">
+        <input type="radio" name="slides" id="slide3">
+
+        <div class="slides">
+            <div class="slide"><video src="videos/BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls
+                    poster="videos/Screenshot 2025-12-11 050652.png"></div>
+            <div class="slide"><video src="videos/neck video.mp4" alt="Slide 2" controls poster="videos/neck video.png">
+            </div>
+            <div class="slide"><video src="videos/finished true tune (1).mp4" alt="Slide 3" controls
+                    poster="videos/poster true tune.png"></div>
+        </div>
+
+        <div class="nav">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
