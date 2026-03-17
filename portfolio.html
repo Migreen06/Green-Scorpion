@@ -73,7 +73,33 @@
             font-size: 1.5rem;
         }
 
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
 
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            font-size: 4rem;
+            animation: slideInFromBottom 2s ease-in;
+        }
+
+        h2 {
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            font-size: 2rem;
+            animation: slideInFromBottom 2s ease-in;
+        }
 
         @keyframes pulse {
             0% {
@@ -206,7 +232,8 @@
                 display: inline-block;
                 color: white;
                 font-size: 1rem;
-                padding: 0.5rem 2rem;
+                padding: 0.5rem 1rem;
+                margin-right:0px;
                 cursor: pointer;
             }
 
@@ -224,20 +251,22 @@
 
             #menu-toggle:checked~ul {
                 display: flex;
+                padding-left:0px;
+
             }
 
             #menu-toggle {
                 display: none;
             }
 
-            
+
 
             .container {
                 max-width: 100%;
                 padding: 10px;
             }
 
-    
+
             li a {
                 font-size: 1.1em;
                 display: block;
@@ -279,40 +308,51 @@
     <main>
         <div class="portfolio">
             <h1>Our Portfolio</h1>
-            <p>Discover our diverse portfolio of successful projects, showcasing our expertise in web development and digital solutions. From innovative websites to impactful digital campaigns, explore how we've helped businesses thrive online.</p>
+            <p>Discover our diverse portfolio of successful projects, showcasing our expertise in web development and
+                digital solutions. From innovative websites to impactful digital campaigns, explore how we've helped
+                businesses thrive online.</p>
             <div class="portfolio-items">
                 <div class="portfolio-item">
                     <img src="project1.jpg" alt="Project 1">
                     <h2>Large Scale Product Launch</h2>
                     <p>The project was complex, involving 24 distinct SKUs; to prevent choice
-                    fatigue and optimize the customer experience, I strategically segmented the launch into two lines based on wood type. As
-                    the sole driver of the strategy, I took full responsibility for the entire digital lifecycle, from initial creative
-                    production to final conversion analysis.</p>
-                    
-                    <ul>
-                        <li><strong>Strategy & Planning:</strong> Developed a comprehensive digital strategy that aligned with the brand's unique value proposition and target audience.</li>
-                        <li><strong>Creative Production:</strong> Directed end-to-end production, including digital asset design, YouTube video production, and all campaign copywriting.</li>
-                        <li><strong>Conversion Strategy:</strong> Built a custom landing page optimized to capture leads and streamline the conversion funnel.</li>
-                        <li><strong>Acquisition & Reach:</strong> Managed a multi-channel ad strategy across Google, Instagram, Facebook, LinkedIn, TikTok, and X to drive brand awareness.</li>
-                        <li><strong>Data-Driven Optimization:</strong>Leveraged analytics to monitor user engagement and refine ad spend in real-time for maximum ROI.</li>
-                        </ul>
+                        fatigue and optimize the customer experience, I strategically segmented the launch into two
+                        lines based on wood type. As
+                        the sole driver of the strategy, I took full responsibility for the entire digital lifecycle,
+                        from initial creative
+                        production to final conversion analysis.</p>
 
-                        <p>
-                    
-                    The campaign successfully drove over $1M in revenue and acquired thousands of new customers.</p>
+                    <ul>
+                        <li><strong>Strategy & Planning:</strong> Developed a comprehensive digital strategy that
+                            aligned with the brand's unique value proposition and target audience.</li>
+                        <li><strong>Creative Production:</strong> Directed end-to-end production, including digital
+                            asset design, YouTube video production, and all campaign copywriting.</li>
+                        <li><strong>Conversion Strategy:</strong> Built a custom landing page optimized to capture leads
+                            and streamline the conversion funnel.</li>
+                        <li><strong>Acquisition & Reach:</strong> Managed a multi-channel ad strategy across Google,
+                            Instagram, Facebook, LinkedIn, TikTok, and X to drive brand awareness.</li>
+                        <li><strong>Data-Driven Optimization:</strong>Leveraged analytics to monitor user engagement and
+                            refine ad spend in real-time for maximum ROI.</li>
+                    </ul>
+
+                    <p>
+
+                        The campaign successfully drove over $1M in revenue and acquired thousands of new customers.</p>
                 </div>
                 <div class="portfolio-item">
                     <img src="project2.jpg" alt="Project 2">
                     <h2>Project Title 2</h2>
-                    <p>Brief description of the project, highlighting the challenges faced and the solutions provided.</p>
+                    <p>Brief description of the project, highlighting the challenges faced and the solutions provided.
+                    </p>
                 </div>
                 <!-- Add more portfolio items as needed -->
             </div>
         </div>
 
-    <script src="" async defer></script>
+        <script src="" async defer></script>
 </body>
 <footer>
     <p style="padding-top:50px; font-size:15px;">&copy; 2024 Green Scorpion Web Development. All rights reserved.</p>
 </footer>
+
 </html>
