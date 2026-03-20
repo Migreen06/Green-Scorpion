@@ -162,13 +162,6 @@
             }
         }
 
-        .reveal {
-            view-timeline-name: --reveal;
-            view-timeline-axis: block;
-            animation: reveal linear both;
-            animation-timeline: --reveal;
-            animation-range: entry 5% entry 35%;
-        }
 
         footer {
             padding: 4rem 0;
@@ -207,7 +200,7 @@
         }
 
         .fullpage {
-            max-width: 100%;
+            max-width: 90%;
             display: grid;
         }
 
@@ -217,14 +210,6 @@
             margin: auto;
         }
 
-        .fullpage>h3 {
-            margin: auto;
-            max-width: 80%;
-            font-size: 22px;
-            border-radius: 10px;
-            padding: 18px 70px;
-            background-color: rgba(52, 51, 51, .6);
-        }
 
         .fullpage>h2 {
             font-size: 25px;
@@ -239,11 +224,17 @@
             margin: auto;
             list-style-type: none;
             text-align: left;
+            view-timeline-name: --reveal;
+            view-timeline-axis: block;
+            animation: reveal linear both;
+            animation-timeline: --reveal;
+            animation-range: entry 5% entry 35%;
         }
+        
 
         .webpage {
             display: flex;
-            max-width: 100%;
+            max-width: 90%;
             justify-content: center;
         }
 
