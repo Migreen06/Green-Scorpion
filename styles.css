@@ -54,6 +54,7 @@ h1 {
     color: white;
     line-height: 2em;
     font-style: italic;
+    animation: reveal 1.5s ease forwards;
 }
 
 
