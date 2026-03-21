@@ -36,7 +36,22 @@
             scroll-behavior: smooth;
         }
 
-
+        
+        body::before {
+            content: "GREEN SCORPION";
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 10vw;
+            font-weight: 700;
+            letter-spacing: -4px;
+            color: rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
         header {
             padding: 1rem 1rem;
             border-bottom: 1px solid var(--border-color);
