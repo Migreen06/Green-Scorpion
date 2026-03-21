@@ -289,7 +289,6 @@ input {
 
     #menu-toggle:checked~ul {
         display: flex;
-        padding-left:0px;
     }
 
     #menu-toggle {
