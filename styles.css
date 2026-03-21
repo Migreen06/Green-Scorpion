@@ -40,7 +40,7 @@
 body {
     background: radial-gradient(circle, #064e3b, #022c22, #000000);
     font-family: ui-sans-serif, system-ui, sans-serif;
-    color: lightgrey;
+    color: white;
 }
 
 * {
@@ -102,7 +102,7 @@ a {
 }
 
 .card>h3 {
-    padding-bottom:.5rem;
+    padding-bottom:1rem;
 }
 
 
