@@ -28,6 +28,19 @@
             box-sizing: border-box;
         }
 
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+
         body {
             background: radial-gradient(circle, #022c22, #000000, #023729);
             font-family: ui-sans-serif, system-ui, sans-serif;
@@ -66,7 +79,7 @@
             line-height: 0.9;
             text-transform: uppercase;
             letter-spacing: -4px;
-            animation: slideInFromBottom 2s ease-in;
+            animation: appear 2s ease-in;
             margin-bottom: 2rem;
         }
 
