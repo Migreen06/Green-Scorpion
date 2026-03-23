@@ -147,6 +147,108 @@
             animation-range: entry 5% entry 35%;
         }
 
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        li:hover {
+            color: #0ac687b4;
+            text-decoration-line: underline;
+            text-decoration-thickness: 3px;
+            transition: ease-in 0.3s;
+        }
+
+
+        .group {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #menu-toggle,
+        label,
+        input {
+            display: none;
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .menu ul {
+                box-sizing: border-box;
+                max-width: calc(100vw - 2rem);
+            }
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                max-width: 100%;
+                padding: 0.5rem;
+            }
+
+            nav {
+                align-items: center;
+                padding: 0px;
+                display: flex;
+                text-align: left;
+                justify-content: space-between;
+            }
+
+            label[for="menu-toggle"] {
+                display: inline-block;
+                color: white;
+                font-size: 1rem;
+                padding: 0.5rem 2rem;
+                cursor: pointer;
+            }
+
+            .menu ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                font-size: 1rem;
+                width: 150px;
+                right: 1rem;
+                top: 60px;
+                background: radial-gradient(circle, #064e3b, #022c22, #000000);
+                box-shadow: 2px 2px 10px 2px rgba(255, 255, 255, 0.5);
+                z-index: 1;
+            }
+
+            #menu-toggle:checked~ul {
+                display: flex;
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+                letter-spacing: -2px;
+            }
+
+            .hero {
+                z-index: 2;
+            }
+
+            li a {
+                font-size: 1.1em;
+                display: block;
+                line-height: 2em;
+                padding: 5%;
+            }
+        }
+
     </style>
 
 </head>
