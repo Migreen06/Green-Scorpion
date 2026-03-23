@@ -8,9 +8,10 @@
     <style>
         .carousel {
             position: relative;
-            max-width: 70%;
-            margin:0 auto;
-            display:block;            
+            max-width: 75%;
+            padding-top:2rem;
+            margin: 0 auto;
+            display: block;
             height: auto;
             overflow: hidden;
             border-radius: 10px;
@@ -45,7 +46,7 @@
         .buttons {
             position: absolute;
             bottom: 10px;
-            left: 50%;
+            left: 20%;
             color: white;
             transform: translateX(-50%);
             display: flex;
@@ -348,9 +349,8 @@
     <main>
         <section class="hero">
 
-            <h1>Videos <br><span style="color:#10b981;">Videos</span></h1>
-            <p>Green Scorpion was started in Houston, fueled by Michelle Green’s refusal to settle for a mediocre
-                digital landscape.</p>
+            <h1>Marketing <br><span style="color:#10b981;">Videos</span></h1>
+            <p></p>
         </section>
         <div class="carousel">
             <input type="radio" name="slides" id="slide1" checked>
@@ -358,18 +358,15 @@
             <input type="radio" name="slides" id="slide3">
 
             <div class="slides">
-                <div class="slide"><video src="BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls
-                        poster="Screenshot 2025-12-11 050652.png"></div>
-                <div class="slide"><video src="neck video.mp4" alt="Slide 2" controls poster="neck video.png">
-                </div>
-                <div class="slide"><video src="finished true tune (1).mp4" alt="Slide 3" controls
-                        poster="poster true tune.png"></div>
+                <div class="slide"><video src="BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls poster="Screenshot 2025-12-11 050652.png"></div>
+                <div class="slide"><video src="neck video.mp4" alt="Slide 2" controls poster="neck video.png"></div>
+                <div class="slide"><video src="finished true tune (1).mp4" alt="Slide 3" controls poster="poster true tune.png"></div>
             </div>
 
             <div class="buttons">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
+                <label for="slide1">1</label>
+                <label for="slide2">2</label>
+                <label for="slide3">3</label>
             </div>
         </div>
     </main>
