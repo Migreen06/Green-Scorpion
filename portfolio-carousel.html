@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Only Carousel</title>
     <style>
-     
-
         .carousel {
             position: relative;
             max-width: 70%;
@@ -42,7 +40,7 @@
             object-fit: cover;
         }
 
-        .nav {
+        .buttons {
             position: absolute;
             bottom: 10px;
             left: 50%;
@@ -52,7 +50,7 @@
             gap: 8px;
         }
 
-        .nav label {
+        .buttons label {
             width: 20px;
             height: 20px;
             background: white;
@@ -73,15 +71,12 @@
             transform: translateX(-200%);
         }
 
-        input#slide1:checked~.nav label[ for="slide1"
-        ],
-        input#slide2:checked~.nav label[ for="slide2"
-        ],
-        input#slide3:checked~.nav label[ for="slide3"
-
-        ] {
+        input#slide1:checked~.buttons label[for="slide1"],
+        input#slide2:checked~.buttons label[for="slide2"],
+        input#slide3:checked~.buttons label[for="slide3"] {
             background: white;
         }
+
         :root {
             --bg-color: radial-gradient(circle, #064e3b, #022c22, #000000);
             --accent-color: #10b981;
@@ -335,7 +330,7 @@
                     </div>
                 </div>
             </a>
-    
+
             <div class="menu">
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle">
@@ -352,32 +347,32 @@
     </header>
     <main>
         <section class="hero">
-        
+
             <h1>Videos <br><span style="color:#10b981;">Videos</span></h1>
             <p>Green Scorpion was started in Houston, fueled by Michelle Green’s refusal to settle for a mediocre
                 digital landscape.</p>
         </section>
-    <div class="carousel">
-        <input type="radio" name="slides" id="slide1" checked>
-        <input type="radio" name="slides" id="slide2">
-        <input type="radio" name="slides" id="slide3">
+        <div class="carousel">
+            <input type="radio" name="slides" id="slide1" checked>
+            <input type="radio" name="slides" id="slide2">
+            <input type="radio" name="slides" id="slide3">
 
-        <div class="slides">
-            <div class="slide"><video src="BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls
-                    poster="Screenshot 2025-12-11 050652.png"></div>
-            <div class="slide"><video src="neck video.mp4" alt="Slide 2" controls poster="neck video.png">
+            <div class="slides">
+                <div class="slide"><video src="BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls
+                        poster="Screenshot 2025-12-11 050652.png"></div>
+                <div class="slide"><video src="neck video.mp4" alt="Slide 2" controls poster="neck video.png">
+                </div>
+                <div class="slide"><video src="finished true tune (1).mp4" alt="Slide 3" controls
+                        poster="poster true tune.png"></div>
             </div>
-            <div class="slide"><video src="finished true tune (1).mp4" alt="Slide 3" controls
-                    poster="poster true tune.png"></div>
-        </div>
 
-        <div class="nav">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
+            <div class="buttons">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 </body>
 
 </html>
