@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        :root {
+            --bg-color: radial-gradient(circle, #022c22, #000000, #023729);
+            --accent-color: #10b981;
+            --accent-glow: rgba(16, 185, 129, 0.4);
+            --text-main: #e5e5e5;
+            --text-dim: #a3a3a3;
+            --card-bg: #0a0f0d;
+            --border-color: #1a2e25;
+            --mono-font: 'Mono', monospace;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle, #022c22, #000000, #023729);
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body::before {
+            content: "Performance, Precision, Passion";
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 7vw;
+            font-weight: 700;
+            letter-spacing: -5px;
+            color: rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+
+
+        header {
+            padding: 1rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(5, 10, 8, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            display: flex;
+            font-weight: 900;
+            font-style: italic;
+            color: white;
+            justify-content: flex-start;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        h1 {
+            font-weight: 700;
+            text-align: center;
+            font-size: 4rem;
+            animation: slideInFromBottom 2s ease-in;
+        }
+
+
+        nav ul {
+            font-weight: 500;
+            list-style: none;
+            gap: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: space-between;
+            display: inline-flex;
+        }
+
+        li reveal {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            text-align: left;
+        }
+
+
+        nav {
+            align-items: center;
+            padding-bottom: 2rem;
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+
+        footer {
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            font-family: var(--mono-font);
+            font-size: 1rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        nav>li:hover {
+            color: #0ac687b4;
+            text-decoration-line: underline;
+            text-decoration-thickness: 3px;
+            transition: ease-in 0.3s;
+        }
+
+        .group {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #menu-toggle,
+        label,
+        input {
+            display: none;
+        }
+
+
+        .reveal {
+            view-timeline-name: --reveal;
+            view-timeline-axis: block;
+            animation: reveal linear both;
+            animation-timeline: --reveal;
+            animation-range: entry 5% entry 35%;
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+
+            .menu ul {
+                box-sizing: border-box;
+                max-width: calc(100vw - 2rem);
+            }
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                max-width: 100%;
+                padding: 0.5rem;
+            }
+
+            nav {
+                align-items: center;
+                padding: 0px;
+                display: flex;
+                text-align: left;
+                justify-content: space-between;
+            }
+
+            label[for="menu-toggle"] {
+                display: inline-block;
+                color: white;
+                font-size: 1rem;
+                padding: 0.5rem 2rem;
+                cursor: pointer;
+            }
+
+            .menu ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                font-size: 1rem;
+                right: 1rem;
+                width: 150px;
+                top: 60px;
+                background: radial-gradient(circle, #064e3b, #022c22, #000000);
+                box-shadow: 2px 2px 10px 2px rgba(255, 255, 255, 0.5);
+                z-index: 1;
+            }
+
+            #menu-toggle:checked~ul {
+                display: flex;
+                padding-left: 0px;
+
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+
+            h1 {
+                color: #333;
+            }
+
+            p {
+                color: #666;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thank You for contacting us, someone will get back to you shortly.
+
+    </h1>
+
+</html>

@@ -67,6 +67,7 @@ h2 {
     font-size: 2rem;
     animation: slideInFromBottom 2s ease-in;
 }
+
 .logo {
     display: flex;
     font-weight: 900;
@@ -199,10 +200,10 @@ input {
 
 .reveal {
     view-timeline-name: --reveal;
-        view-timeline-axis: block;
-        animation: reveal linear both;
-        animation-timeline: --reveal;
-        animation-range: entry 5% entry 35%;
+    view-timeline-axis: block;
+    animation: reveal linear both;
+    animation-timeline: --reveal;
+    animation-range: entry 5% entry 35%;
 }
 
 
@@ -227,8 +228,8 @@ input {
     }
 
     .group>img {
-        padding-left:0px;
-        margin-left:0px;
+        padding-left: 0px;
+        margin-left: 0px;
     }
 
     nav {
@@ -245,7 +246,7 @@ input {
         font-size: 1rem;
         padding: 0.5rem 1rem;
         cursor: pointer;
-        margin-right:0px;
+        margin-right: 0px;
     }
 
     .menu ul {
@@ -266,7 +267,7 @@ input {
 
     #menu-toggle {
         display: none;
-        
+
     }
 
     .content>p {
