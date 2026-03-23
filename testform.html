@@ -4,6 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
+
+    <style>
+        :root {
+            --bg-color: radial-gradient(circle, #064e3b, #022c22, #000000);
+            --accent-color: #10b981;
+            --accent-glow: rgba(16, 185, 129, 0.4);
+            --text-main: #e5e5e5;
+            --text-dim: #a3a3a3;
+            --card-bg: #0a0f0d;
+            --border-color: #1a2e25;
+            --mono-font: 'mono', monospace;
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+    
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+    
+            to {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+    
+        body {
+            background: radial-gradient(circle, #022c22, #000000, #023729);
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+    
+    
+        body::before {
+            content: "GREEN SCORPION";
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 10vw;
+            font-weight: 700;
+            letter-spacing: -4px;
+            color: rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+            z-index: -1;
+            pointer-events: none;
+        }
+    
+    
+        .hero {
+            padding: 6rem 0 4rem 0;
+            text-align: center;
+            background: rgba(5, 10, 8, 0.8);
+        }
+    
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            font-style: italic;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+            animation: appear 2s ease-in;
+            margin-bottom: 2rem;
+        }
+    
+        .hero p {
+            max-width: 90%;
+            margin: 0 auto;
+            color: var(--text-dim);
+            font-size: 1.3rem;
+        }
+    
+        header {
+            padding: 1rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(5, 10, 8, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    
+        .logo {
+            display: flex;
+            font-weight: 900;
+            font-style: italic;
+            color: white;
+            justify-content: flex-start;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+        }
+    
+    
+        ul {
+            font-weight: 500;
+            list-style: none;
+            gap: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: space-between;
+            display: inline-flex;
+        }
+    
+    
+    
+        nav {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 2rem;
+        }
+    
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .reveal {
+            view-timeline-name: --reveal;
+            view-timeline-axis: block;
+            animation: reveal linear both;
+            animation-timeline: --reveal;
+            animation-range: entry 5% entry 35%;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -35,7 +180,7 @@
     <main>
         <section class="hero">
             <h1>Contact Us</h1>
-            
+
         </section>
 
         <form>
