@@ -7,29 +7,57 @@
 </head>
 
 <body>
+    header>
+    <nav>
+        <a href="index.html">
+            <div class="group">
+                <img src="logo.svg" width="36" height="36">
+                <div class="logo">
+                    GREEN <span style="color:#10b981;padding-left:.5rem;"> SCORPION</span>
+                </div>
+            </div>
+        </a>
 
-    <h1>Contact Us</h1>
+        <div class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">
+                <img src="menu.svg">
+            </label>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            
+        </section>
 
-    <form>
-        <p>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
-        </p>
+        <form>
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
 
-        <p>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-        </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
 
-        <p>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-        </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+            </p>
 
-        <p>
-            <button type="submit">Send Message</button>
-        </p>
-    </form>
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+        </form>
 
 </body>
 
