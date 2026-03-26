@@ -171,7 +171,19 @@
             display: none;
         }
 
+        button {
+            background: radial-gradient(circle, #064e3b, #022c22, #000000);
+            padding: 10px 20px;
+            font-weight: 600;
+            margin: 2rem auto;
+            border-radius: 8px;
+            max-width: 200px;
+        }
 
+        button:hover {
+            scale: 1.2;
+            transition: ease-in 0.3s;
+        }
 
 
         @media (max-width: 768px) {
@@ -291,6 +303,11 @@
 
             <p>
                 <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="">Email:</label><br>
                 <input type="email" id="email" name="email" required>
             </p>
 
