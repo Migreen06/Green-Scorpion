@@ -11,7 +11,7 @@
             max-width: 70%;
             padding-top: 2rem;
             padding-bottom: 5rem;
-            height:auto;
+            height: auto;
             margin: 0 auto;
             display: block;
             overflow: hidden;
@@ -23,26 +23,44 @@
             display: none;
         }
 
+        /* 1. Make the container the total width of all 3 slides */
         .slides {
             display: flex;
-            width: 100%;
+            width: 300%;
             margin: 0 auto;
             height: auto;
             transition: transform 0.5s ease;
         }
 
+        /* 2. Each slide is now 1/3rd of the 300% width */
         .slide {
-            width: 100%;
+            width: 33.333%;
             height: auto;
             flex-shrink: 0;
         }
 
+        /* 3. Ensure the video behaves as a block element */
         .slide video {
+            display: block;
             width: 100%;
             margin: 0 auto;
             object-fit: cover;
-            height:auto;
+            height: auto;
         }
+
+        /* 4. Update translation to move by 1/3rd increments */
+        input#slide1:checked~.slides {
+            transform: translateX(0%);
+        }
+
+        input#slide2:checked~.slides {
+            transform: translateX(-33.333%);
+        }
+
+        input#slide3:checked~.slides {
+            transform: translateX(-66.666%);
+        }
+
 
         .buttons {
             position: absolute;
@@ -63,17 +81,6 @@
             transition: background 0.3s;
         }
 
-        input#slide1:checked~.slides {
-            transform: translateX(0%);
-        }
-
-        input#slide2:checked~.slides {
-            transform: translateX(-100%);
-        }
-
-        input#slide3:checked~.slides {
-            transform: translateX(-200%);
-        }
 
         input#slide1:checked~.buttons label[for="slide1"],
         input#slide2:checked~.buttons label[for="slide2"],
