@@ -42,13 +42,13 @@
             margin: 0 auto;
             object-fit: cover;
             height: auto;
+            transition: ease-in 0.3s;
         }
 
 
         #slide1:checked~.slides,
-        #slide2:checked~.slides,
-        #slide3:checked~.slides {
-            animation: slideleft 5s 3s infinite ease-in-out;
+        #slide2:checked~.slides {
+            animation: slideleft 5s infinite ease-in-out;
         }
 
 
