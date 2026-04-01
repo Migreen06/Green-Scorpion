@@ -109,17 +109,6 @@
             justify-content: flex-start;
         }
 
-        @keyframes appear {
-            from {
-                opacity: 0;
-                transform: scaley(0);
-            }
-
-            to {
-                opacity: 1;
-                transform: scaley(1);
-            }
-        }
 
         body {
             background: radial-gradient(circle, #022c22, #000000, #023729);
@@ -265,6 +254,10 @@
             animation-range: entry 5% entry 35%;
         }
 
+        #slide1:checked~.slides {
+            transform: translateX(0%);
+        }
+        
 
         @media (max-width: 768px) {
             body {
