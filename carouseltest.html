@@ -42,12 +42,13 @@
             margin: 0 auto;
             object-fit: cover;
             height: auto;
+            animation: slideleft 5s infinite ease-in-out;
         }
 
         @keyframes slideleft {
             from {
                 opacity: 1;
-                transform: translatex(-100px);
+                transform: translatex(100px);
             }
 
             to {
@@ -255,7 +256,7 @@
         #slide1:checked~.slides, 
         #slide2:checked~.slides, 
         #slide3:checked~.slides        {
-            transform: translateX(300%);
+            transform: translateX(100%);
         }
 
 
