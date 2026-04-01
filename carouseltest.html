@@ -35,17 +35,30 @@
             width: 33.333%;
             height: auto;
             flex-shrink: 0;
+            animation: slideleft 5s infinite ease-in-out;
         }
 
         .slide video {
             display: block;
             width: 100%;
             margin: 0 auto;
-            animation: appear 5s 2s infinite ease-in-out;
             object-fit: cover;
             height: auto;
         }
 
+        @keyframes slideleft {
+            from {
+                opacity: 0;
+                scale: 0%;
+                transform: translatex(150px);
+            }
+
+            to {
+                opacity: 1;
+                scale: 100%;
+                transform: translateY(0);
+            }
+        }
 
 
         .buttons {
