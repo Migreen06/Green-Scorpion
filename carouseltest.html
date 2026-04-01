@@ -45,10 +45,18 @@
             animation: slideleft 5s infinite ease-in-out;
         }
 
+        
+        #slide1:checked~.slides, 
+        #slide2:checked~.slides, 
+        #slide3:checked~.slides        {
+            transform: translateX(100%);
+        }
+
+
         @keyframes slideleft {
             from {
                 opacity: 1;
-                transform: translatex(100px);
+                transform: translatex(50%);
             }
 
             to {
@@ -251,12 +259,6 @@
             animation: reveal linear both;
             animation-timeline: --reveal;
             animation-range: entry 5% entry 35%;
-        }
-
-        #slide1:checked~.slides, 
-        #slide2:checked~.slides, 
-        #slide3:checked~.slides        {
-            transform: translateX(100%);
         }
 
 
