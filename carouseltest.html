@@ -50,15 +50,15 @@
             animation: slideleft 5s infinite ease-in-out;
         }
 
-
+        #slide2:checked~.slides{
+            animation: slideleft 5s 5s infinite ease-in-out;
+        }
         @keyframes slideleft {
             from {
-                opacity: 0;
                 transform: translatex(0px);
             }
 
             to {
-                opacity: 1;
                 transform: translatex(100%);
             }
         }
