@@ -46,8 +46,7 @@
         }
 
 
-        #slide1:checked~.slides,
-        #slide2:checked~.slides {
+        #slide1:checked~.slides{
             animation: slideleft 5s infinite ease-in-out;
         }
 
@@ -55,7 +54,7 @@
         @keyframes slideleft {
             from {
                 opacity: 0;
-                transform: translatex(-300px);
+                transform: translatex(0px);
             }
 
             to {
