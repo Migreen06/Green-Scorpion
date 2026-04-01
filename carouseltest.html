@@ -23,7 +23,6 @@
             display: none;
         }
 
-        /* 1. Make the container the total width of all 3 slides */
         .slides {
             display: flex;
             width: 300%;
@@ -32,35 +31,21 @@
             transition: transform 0.5s ease;
         }
 
-        /* 2. Each slide is now 1/3rd of the 300% width */
         .slide {
             width: 33.333%;
             height: auto;
             flex-shrink: 0;
         }
 
-        /* 3. Ensure the video behaves as a block element */
         .slide video {
             display: block;
             width: 100%;
             margin: 0 auto;
+            animation: appear 5s 2s infinite ease-in-out;
             object-fit: cover;
             height: auto;
         }
 
-        /* 4. Update translation to move by 1/3rd increments */
-        input#slide1:checked~.slides {
-            transform: translateX(0%);
-        }
-
-        input#slide2:checked~.slides {
-            transform: translateX(-33.333%);
-
-        }
-
-        input#slide3:checked~.slides {
-            transform: translateX(-66.666%);
-        }
 
 
         .buttons {
@@ -116,12 +101,12 @@
         @keyframes appear {
             from {
                 opacity: 0;
-                transform: scaleX(0);
+                transform: scaley(0);
             }
 
             to {
                 opacity: 1;
-                transform: scaleX(1);
+                transform: scaley(1);
             }
         }
 
