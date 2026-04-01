@@ -45,15 +45,17 @@
         }
 
 
-        #slide1:checked~.slides {
-            animation: slideleft 5s infinite ease-in-out;
+        #slide1:checked~.slides,
+        #slide2:checked~.slides,
+        #slide3:checked~.slides {
+            animation: slideleft 5s 3s infinite ease-in-out;
         }
 
 
         @keyframes slideleft {
             from {
                 opacity: 0;
-                transform: translatex(-100px);
+                transform: translatex(-300px);
             }
 
             to {
