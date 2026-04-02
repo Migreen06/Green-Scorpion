@@ -23,6 +23,15 @@
             display: none;
         }
 
+        ul.slides {
+            display: block;
+            position: relative;
+            height: 600px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style: none;
+        }
 
         .carousel-controls .prev-slide {
             width: 49%;
@@ -385,12 +394,12 @@
             <p></p>
         </section>
 
-            <!--<input type="radio" name="slides" id="slide2">
+        <!--<input type="radio" name="slides" id="slide2">
         <input type="radio" name="slides" id="slide3"> !-->
 
         <div class="carousel">
 
-            <div class="slides">
+            <ul class="slides">
                 <input type="radio" name="slides" id="slide1" checked>
                 <li class="slide-container">
                     <div class="slide-image">
@@ -411,13 +420,13 @@
                 <div class="slide"><video src="neck video.mp4" alt="Slide 2" poster="neck video.png" controls>
                 </div>
 
-            </div>
+        </div>
 
-            <div class="buttons" style="color:black;text-align:center;">
-                <label for="slide1">1</label>
-                <label for="slide2">2</label>
-                <label for="slide3">3</label>
-            </div>
+        <div class="buttons" style="color:black;text-align:center;">
+            <label for="slide1">1</label>
+            <label for="slide2">2</label>
+            <label for="slide3">3</label>
+        </div>
         </div>
     </main>
 </body>
