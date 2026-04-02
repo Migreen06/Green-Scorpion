@@ -21,8 +21,7 @@
         ul.slides {
             display: block;
             position: relative;
-            min-height: 400px;
-            max-width: auto;
+            height: 600px;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -51,16 +50,16 @@
             display: block;
             position: absolute;
             width: 100%;
-            height: auto;
+            height: 100%;
             top: 0;
             opacity: 0;
             transition: all .7s ease-in-out;
         }
 
         .slide-image video {
-            width: 80%;
-            height: auto;
-            align-content: center;
+            width: auto;
+            min-width: 100%;
+            height: 100%;
         }
 
         .carousel-controls {
@@ -70,7 +69,7 @@
             right: 0;
             z-index: 999;
             font-size: 100px;
-            line-height: 400px;
+            line-height: 600px;
             color: #fff;
         }
 
@@ -83,10 +82,13 @@
             cursor: pointer;
         }
 
-        .slide-image:hover+label {
+        .slide-image:hover+.carousel-controls label {
             opacity: 0.5;
         }
 
+        .carousel-controls label:hover {
+            opacity: 1;
+        }
 
         .carousel-controls .prev-slide {
             width: 49%;
@@ -116,7 +118,7 @@
             border-radius: 50%;
             background-color: #fff;
             opacity: 0.5;
-            margin: 20px;
+            margin: 10px;
         }
 
         input:checked+.slide-container .slide-image {
