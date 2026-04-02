@@ -80,14 +80,6 @@
         }
 
 
-        #slide1:checked~.slides {
-            animation: slideleft 15s ease-in-out;
-        }
-
-        #slide2:checked~.slides {
-            animation: slideleft 15s ease-in-out;
-        }
-
         @keyframes slideleft {
             from {
                 transform: translatex(-100px);
@@ -394,7 +386,6 @@
 
 
         <div class="carousel">
-            <input type="radio" name="slides" id="slide1" checked>
             <input type="radio" name="slides" id="slide2">
             <input type="radio" name="slides" id="slide3">
 
@@ -406,10 +397,13 @@
                             poster="Screenshot 2025-12-11 050652.png">
                     </div>
                     <div class="carousel-controls">
-                        <label for="img-3" class="prev-slide">
+                        <label for="slide3" class="prev-slide">
                             <span>&lsaquo;</span> </label>
 
-
+                        <label for="slide2" class="next-slide">
+                            <span>&rsaquo;</span> </label>
+                            </div>
+                            </li>
 
                         <div class="slide"><video src="finished true tune (1).mp4" alt="Slide 3" controls
                                 poster="poster true tune.png"></div>
