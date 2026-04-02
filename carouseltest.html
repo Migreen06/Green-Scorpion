@@ -39,6 +39,27 @@
             content: '';
         }
 
+
+        .img {
+      grid-area: img;
+      width: 100%;
+      aspect-ratio:3/4;
+      transition: all 300ms ease-in-out;
+      transform-origin: center center;
+        
+      @container not scroll-state(snapped: inline) {
+        scale: .5;
+        opacity: .5;
+      }
+      & > img{
+        width:100%;
+        height: 100%;
+        object-fit:cover;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px  rgba(0 0 0 / .25);
+      }
+
+
         .slide {
             width: 33.33%;
             height: auto;
