@@ -42,10 +42,10 @@
             display: block;
             width: 100%;
             margin: 0 auto;
-            gap:.25rem;
+            gap: .25rem;
             object-fit: cover;
             height: auto;
-            transition: ease-in 0.3s;
+            transition: all .7s ease-in-out;
         }
 
 
@@ -70,11 +70,13 @@
 
         .buttons {
             position: absolute;
-            bottom: 5px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 8px;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            font-size: 100px;
+            line-height: 600px;
+            color: #fff;
         }
 
         .buttons label {
