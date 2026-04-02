@@ -120,13 +120,6 @@
             cursor: pointer;
         }
 
-
-        input#slide1:checked~.buttons label[for="slide1"],
-        input#slide2:checked~.buttons label[for="slide2"],
-        input#slide3:checked~.buttons label[for="slide3"] {
-            background: white;
-        }
-
         :root {
             --bg-color: radial-gradient(circle, #064e3b, #022c22, #000000);
             --accent-color: #10b981;
@@ -392,17 +385,15 @@
             <p></p>
         </section>
 
-        <!--
-        <input type="radio" name="slides" id="slide3"> !-->
+        
 
         <div class="carousel">
 
             <ul class="slides">
-                <input type="radio" name="slides" id="slide1" checked>
+                <input type="radio" name="radio-buttons" id="slide1" checked>
                 <li class="slide-container">
                     <div class="slide-image">
-                        <img src="BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls
-                            poster="Screenshot 2025-12-11 050652.png">
+                        <img src="BrownSugarPremiumGuitarandBass.mp4" alt="Slide 1" controls poster="Screenshot 2025-12-11 050652.png">
                     </div>
                     <div class="carousel-controls">
                         <label for="slide3" class="prev-slide">
@@ -412,7 +403,7 @@
                             <span>&rsaquo;</span> </label>
                     </div>
                 </li>
-                <input type="radio" name="slides" id="slide2">
+                <input type="radio" name="radio-buttons" id="slide2">
                 <li class="slide-container">
                     <div class="slide-image">
 
@@ -422,6 +413,9 @@
                     <div class="slide"><video src="neck video.mp4" alt="Slide 2" poster="neck video.png" controls>
                     </div>
                 </li>
+                <input type="radio" name="slides" id="slide3">
+                <li class="slide-container">
+                    <div class="slide-image">
             </ul>
         </div>
 
