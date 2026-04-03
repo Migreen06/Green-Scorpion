@@ -6,7 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Only Carousel</title>
     <style>
-         * {
+        .hero {
+            padding: 3rem 0 4rem 0;
+            text-align: center;
+            background: rgba(5, 10, 8, 0.8);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            font-style: italic;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+            animation: appear 2s ease-in;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            max-width: 90%;
+            margin: 0 auto;
+            color: var(--text-dim);
+            font-size: 1.3rem;
+        }
+
+
+        .group {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -25,6 +57,7 @@
             font-size: 4rem;
             animation: appear 2s ease-in;
         }
+
         header {
             padding: 1rem 1rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -72,7 +105,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            flex-wrap:wrap;
+            flex-wrap: wrap;
         }
 
         .nav-link {
