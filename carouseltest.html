@@ -6,6 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Only Carousel</title>
     <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: white;
+            line-height: 2em;
+            font-style: italic;
+        }
+
+        h1 {
+            font-weight: 700;
+            text-align: center;
+            font-size: 4rem;
+            animation: appear 2s ease-in;
+        }
+        header {
+            padding: 1rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(5, 10, 8, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        body {
+            background: radial-gradient(circle, #064e3b, #022c22, #000000);
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .logo {
+            display: flex;
+            font-weight: 900;
+            font-style: italic;
+            color: white;
+            justify-content: flex-start;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+        }
+
+        #menu-toggle,
+        label,
+        input {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+
+        nav {
+            padding-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap:wrap;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+
+        ul {
+            font-weight: 500;
+            list-style: none;
+            gap: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: space-around;
+            display: inline-flex;
+        }
+
         body {
             background: radial-gradient(circle, #022c22, #000000, #023729);
             font-family: ui-sans-serif, system-ui, sans-serif;
