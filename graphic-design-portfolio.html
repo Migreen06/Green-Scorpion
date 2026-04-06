@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Scorpion | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: radial-gradient(circle, #022c22, #000000, #023729);
+            --accent-color: #10b981;
+            --accent-glow: rgba(16, 185, 129, 0.4);
+            --text-main: #e5e5e5;
+            --text-dim: #a3a3a3;
+            --card-bg: #0a0f0d;
+            --border-color: #1a2e25;
+            --mono-font: 'Mono', monospace;
+        }
+
+        .hero p {
+            max-width: 90%;
+            margin: 0 auto;
+            color: var(--text-dim);
+            font-size: 1.3rem;
+        }
+
+        .services-section {
+            padding: 8rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: flex-end;
+            gap: 2rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .hero {
+            padding: 3rem 0 4rem 0;
+            text-align: center;
+            background: rgba(5, 10, 8, 0.8);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            font-style: italic;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+            margin-bottom: 2rem;
+        }
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle, #022c22, #000000, #023729);
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body::before {
+            content: "Performance, Precision, Passion";
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 7vw;
+            font-weight: 700;
+            letter-spacing: -5px;
+            color: rgba(255, 255, 255, 0.2);
+            white-space: nowrap;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            text-align: justify;
+            text-justify: inter-character;
+            max-width: 90%;
+            margin: 1rem auto;
+        }
+
+
+        header {
+            padding: 1rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(5, 10, 8, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            display: flex;
+            font-weight: 900;
+            font-style: italic;
+            color: white;
+            justify-content: flex-start;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+        }
+
+        hr {
+            max-width: 75%;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            text-align: center;
+            font-size: 4rem;
+            animation: appear 2s ease-in;
+        }
+
+        h2 {
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            font-size: 2rem;
+            animation: slideInFromBottom 2s ease-in;
+        }
+
+
+
+        nav ul {
+            font-weight: 500;
+            list-style: none;
+            gap: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: space-between;
+            display: inline-flex;
+        }
+
+        li reveal {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            text-align: left;
+        }
+
+
+        nav {
+            align-items: center;
+            padding-bottom: 2rem;
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+
+        footer {
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            font-family: var(--mono-font);
+            font-size: 1rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        nav>li:hover {
+            color: #0ac687b4;
+            text-decoration-line: underline;
+            text-decoration-thickness: 3px;
+            transition: ease-in 0.3s;
+        }
+
+
+        h3 {
+            font-weight: 700;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .group {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #menu-toggle,
+        label,
+        input {
+            display: none;
+        }
+
+        .fullpage {
+            max-width: 100%;
+            display: grid;
+        }
+
+        .fullpage>img {
+            max-width: 90%;
+            height: auto;
+            margin: auto;
+        }
+
+
+        .fullpage>h2 {
+            font-size: 25px;
+            padding-bottom: 1.5em;
+        }
+
+
+        .portfolio-bullets {
+            padding: 1rem;
+            display: block;
+            font-size: 1.25rem;
+            max-width: 80%;
+            margin: auto;
+            list-style-type: none;
+            text-align: left;
+        }
+
+
+        .reveal {
+            view-timeline-name: --reveal;
+            view-timeline-axis: block;
+            animation: reveal linear both;
+            animation-timeline: --reveal;
+            animation-range: entry 5% entry 35%;
+        }
+
+
+        h5 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .webpage {
+            display: flex;
+            max-width: 100%;
+            justify-content: space-around;
+        }
+
+        .webpage-images>img {
+            max-width: 100%;
+        }
+
+
+        .webpage-images p {
+            padding-top: 2%;
+            display: grid;
+            max-width: 50%;
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+                letter-spacing: -2px;
+            }
+
+            .hero {
+                z-index: 2;
+            }
+
+
+            .menu ul {
+                box-sizing: border-box;
+                max-width: calc(100vw - 2rem);
+            }
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                max-width: 100%;
+                padding: 0.5rem;
+            }
+
+            nav {
+                align-items: center;
+                padding: 0px;
+                display: flex;
+                text-align: left;
+                justify-content: space-between;
+            }
+
+            label[for="menu-toggle"] {
+                display: inline-block;
+                color: white;
+                font-size: 1rem;
+                padding: 0.5rem 2rem;
+                cursor: pointer;
+            }
+
+            .menu ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                font-size: 1rem;
+                right: 1rem;
+                width: 150px;
+                top: 60px;
+                background: radial-gradient(circle, #064e3b, #022c22, #000000);
+                box-shadow: 2px 2px 10px 2px rgba(255, 255, 255, 0.5);
+                z-index: 1;
+            }
+
+            #menu-toggle:checked~ul {
+                display: flex;
+                padding-left: 0px;
+
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+
+            .webpage {
+                display: inline;
+            }
+
+
+            .webpage-images p {
+                display: grid;
+                max-width: 50%;
+            }
+
+            .fullpage {
+                max-width: 100%;
+                display: inline-block;
+            }
+
+            .fullpage>img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .fullpage>h2 {
+                font-size: 25px;
+                padding-bottom: 2em;
+            }
+
+            .fullpage>h3 {
+                max-width: 90%;
+                font-size: 18px;
+                padding: 10px 30px;
+            }
+
+            li a {
+                font-size: 1.1em;
+                display: block;
+                line-height: 2em;
+                padding: 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="group">
+                    <img src="logo.svg" width="36" height="36">
+                    <div class="logo">
+                        GREEN <span style="color:#10b981;padding-left:.5rem;"> SCORPION</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle">
+                    <img src="menu.svg">
+                </label>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="portfolio">
+                <h1>Web Dev<span style="color:#10b981;"> and Design</span></h1>
+                <p> From innovative websites to impactful digital campaigns, explore how we've helped
+                    businesses thrive online.</p>
+            </div>
+        </section>
+        <div class="portfolio-items reveal">
+            <!-- <div class="portfolio-item">
+                <img style="padding-top:4rem;display:block;max-width:80%;margin:0 auto;" src="BrownSugar.gif"
+                    alt="Project 1">
+                <h2>Large Scale Product Launch</h2>
+                <p>The project was complex, involving 24 distinct SKUs; to prevent choice
+                    fatigue and optimize the customer experience, I strategically segmented the launch into two
+                    lines based on wood type. As
+                    the sole driver of the strategy, I took full responsibility for the entire digital lifecycle,
+                    from initial creative
+                    production to final conversion analysis.</p>
+
+                <ul class="portfolio-bullets">
+                    <li><strong>Strategy & Planning:</strong> <br>Developed a comprehensive digital strategy that
+                        aligned with the brand's unique value proposition and target audience.</li><br>
+                    <li><strong>Creative Production:</strong><br> Directed end-to-end production, including digital
+                        asset design, YouTube video production, and all campaign copywriting.</li><br>
+                    <li><strong>Conversion Strategy:</strong> Built a custom landing page optimized to capture leads
+                        and streamline the conversion funnel.</li><br>
+                    <li><strong>Acquisition & Reach:</strong> Managed a multi-channel ad strategy across Google,
+                        Instagram, Facebook, LinkedIn, TikTok, and X to drive brand awareness.</li><br>
+                    <li><strong>Data-Driven Optimization:</strong>Leveraged analytics to monitor user engagement and
+                        refine ad spend in real-time for maximum ROI.</li>
+                </ul>
+                <p>
+                    The campaign successfully drove over $1M in revenue and acquired thousands of new customers.</p>
+            </div>
+        </div> -->
+            <h2 style="font-size:2rem;">Webpage Redesigns</h2>
+            <br>
+            <h3>Allparts "About Us" Page</h3>
+
+            <div class="webpage">
+                <div class="webpage-images">
+                    <div>
+                        <h5>Before</h5>
+                    </div>
+                    <img src="webdev-sites/old about us allparts.jpg">
+                </div>
+                <div class="webpage-images">
+                    <div>
+                        <h5>After</h5>
+                    </div>
+                    <img src="webdev-sites/about us.jpg">
+                </div>
+            </div>
+            <br>
+            <br>
+            <h3>Allparts "International Distributors" Page</h3>
+            <br><br>
+
+            <div class="webpage">
+                <div class="webpage-images">
+                    <div>
+                        <h5>Before</h5>
+                    </div>
+                    <img src="webdev-sites/old international distributors.jpg">
+                </div>
+                <div class="webpage-images">
+                    <div>
+                        <h5>After</h5>
+                    </div>
+                    <img src="webdev-sites/new international distributors.jpg">
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <h3>atelium jewelry</h3>
+            <br><br>
+
+            <div class="webpage">
+                <div class="webpage-images">
+                    <img src="webdev-sites/atelium-homepage.png">
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <h3>Product Grid Before and After</h3>
+            <br>
+            <br>
+            <div class="webpage">
+                <div class="webpage-images">
+                    <div>
+                        <h5>Before</h5>
+                    </div>
+                    <img src="webdev-sites/old allparts product grids.jpg">
+                </div>
+                <div class="webpage-images">
+                    <div>
+                        <h5>After</h5>
+                    </div>
+                    <img src="webdev-sites/allpparts product grid.png">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <h3>"Shop by Category" Section Before and After</h3>
+            <br>
+            <br>
+            <div class="webpage">
+                <div class="webpage-images">
+                    <div>
+                        <h5>Before</h5>
+                    </div>
+                    <img src="webdev-sites/old category.jpg">
+                </div>
+                <div class="webpage-images">
+                    <div>
+                        <h5>After</h5>
+                    </div>
+                    <img src="webdev-sites/cropped.jpg">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+
+            <div class="fullpage"><br>
+                <h3>Allparts Select: Premium Brand by Allparts</h3>
+                <h3>Brand Page</h3><br><br>
+                <img src="webdev-sites/top of select page.jpeg">
+                <img src="webdev-sites/middle of select page.jpeg">
+                <img src="webdev-sites/bottom of select page.jpeg">
+                <br><br>
+                <h3>Certano: High End Guitar Bridge Manufacturer </h3>
+                <h3>Brand Page</h3><br><br>
+                <hr>
+                <img src="webdev-sites/certano.jpg">
+                <br><br>
+                <h3>Allparts Homepage</h3><br>
+                <hr>
+                <img src="webdev-sites/allparts homepage.jpeg">
+                <br><br>
+                <h3>True Tune: Economy Line of Guitar Tuners</h3>
+                <h3>Landing Page</h3><br>
+                <hr>
+                <img src="webdev-sites/Screenshot_18-12-2025_181145_www.allparts.com.jpeg">
+            </div>
+            <script src="" async defer></script>
+</body>
+<footer>
+    <p style="padding-top:50px; font-size:15px;">&copy; 2024 Green Scorpion Web Development. All rights reserved.</p>
+</footer>
+
+</html>
