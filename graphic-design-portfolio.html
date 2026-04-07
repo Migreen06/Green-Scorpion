@@ -20,7 +20,7 @@
         p {
             font-size: 1rem;
             line-height: 1rem;
-            max-width:80%;
+            max-width: 80%;
         }
 
         .hero>p {
@@ -30,7 +30,8 @@
             max-width: 80%;
             margin: 1rem auto;
         }
-    
+
+        .marketing-images,
         .marketing-assets {
             display: flex;
             flex-wrap: wrap;
@@ -38,13 +39,12 @@
             max-width: 100%;
         }
 
-        .marketing-images {
-            max-width: 30%;
+        .marketing-images>img {
+            max-width: 32%;
             height: auto;
-            display:flex;
         }
 
-       
+
 
         .section-header h2 {
             font-size: 3rem;
@@ -103,7 +103,7 @@
 
 
 
-       
+
 
 
         header {
@@ -352,7 +352,7 @@
         <nav>
             <a href="index.html">
                 <div class="group">
-                    <img src="logo.svg" width="36" height="36">
+                    <img src="icons/logo.svg" width="36" height="36">
                     <div class="logo">
                         GREEN <span style="color:#10b981;padding-left:.5rem;"> SCORPION</span>
                     </div>
@@ -362,7 +362,7 @@
             <div class="menu">
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle">
-                    <img src="menu.svg">
+                    <img src="icons/menu.svg">
                 </label>
                 <ul>
                     <li><a href="about.html">About Us</a></li>
@@ -377,24 +377,19 @@
 
     <main>
         <section class="hero">
-            <div class="portfolio">
+            <div class="container">
                 <h1>Graphic<span style="color:#10b981;"> Design
                     </span></h1>
                 <p>Our graphic design portfolio showcases a diverse range of visually stunning and
                     impactful projects. From eye-catching logos to compelling marketing materials.</p>
             </div>
         </section>
-        <div class="marketing-images">
-            <div class="box">
-
-            </div>
-        </div>
         <div class="intro">
             <p>From eye-catching social media graphics to compelling email campaigns, our marketing
                 assets are designed to captivate audiences and drive engagement. Each asset is crafted
                 with a focus on brand consistency and strategic messaging, ensuring that every piece of
                 content contributes to a cohesive and impactful marketing strategy.</p>
-
+</div>
             <div class="marketing-assets">
                 <div class="marketing-images">
                     <img src="marketing-assets/gotoh.webp" alt="gotoh guitar tuners">
