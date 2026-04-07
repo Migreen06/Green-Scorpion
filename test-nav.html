@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.navigation {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul.navigation li {
+            position: relative;
+            display: block;
+            font-size: 13px;
+        }
+
+        ul.navigation li>ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 130px;
+            padding: 0;
+        }
+
+        ul.navigation li a {
+            text-decoration: none;
+            color: #000;
+            background: #efefef;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        ul.navigation li:hover a {
+            background: #2c2c2c;
+            color: #fff;
+        }
+
+        ul.navigation li:hover>ul {
+            display: block;
+        }
+
+        ul.navigation li:hover>ul li {
+            width: 100%;
+        }
+
+        ul.navigation li:hover ul ul {
+            left: 100%;
+            top: 0;
+        }
+
+        ul.navigation li ul li:hover>a {
+            background: #efefef;
+            color: #000;
+        }
+
+        ul.navigation li.dropdown:before {
+            content: "";
+            border: 5px solid transparent;
+            border-top-color: #000;
+            position: absolute;
+            right: 3px;
+            top: 54%;
+            transform: translateY(-50%);
+        }
+
+        ul.navigation li:hover:before {
+            border-top-color: #fff;
+        }
+
+        ul.navigation li.dropdown li.dropdown:before {
+            border-top-color: #fff;
+        }
+
+        ul.navigation li.dropdown li.dropdown:hover:before {
+            border-top-color: #2c2c2c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown"><a href="#">Service</a>
+                <ul>
+                    <li><a href="#">Service 1</a></li>
+                    <li class="dropdown"><a href="#">Service 2</a>
+                        <ul>
+                            <li><a href="#">Service A</a></li>
+                            <li><a href="#">Service B</a></li>
+                            <li><a href="#">Service C</a></li>
+                            <li><a href="#">Service D</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Service 3</a></li>
+                    <li><a href="#">Service 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Enquiry</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
