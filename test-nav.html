@@ -85,24 +85,42 @@
 </head>
 
 <body>
-    <div class="menu">
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="dropdown"><a href="portfolio.html">Portfolio</a>
-                <ul>
-                    <li class="dropdown">
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="group">
+                    <img src="icons/logo.svg" width="36" height="36">
+                    <div class="logo">
+                        GREEN <span style="color:#10b981;padding-left:.5rem;"> SCORPION</span>
+                    </div>
+                </div>
+            </a>
+            <div class="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle">
+                    <img src="icons/menu.svg">
+                </label>
+
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li class="dropdown"><a href="portfolio.html">Portfolio</a>
+                        <ul>
+                            <li class="dropdown">
                             <li><a href="#">Web Portfolio</a></li>
                             <li><a href="#">Marketing Portfolio</a></li>
                             <li><a href="#">Graphic Design</a></li>
                             <li><a href="#">Video Portfolio</a></li>
                     </li>
                 </ul>
-            </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
+                </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
