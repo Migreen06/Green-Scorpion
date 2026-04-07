@@ -24,6 +24,21 @@
             font-size: 1.3rem;
         }
 
+        .marketing-images,
+        .marketing-assets {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 100%;
+        }
+
+        .marketing-images>img {
+            max-width: 32%;
+            height: auto;
+            width: auto;
+            margin: .5rem;
+        }
+
         .services-section {
             padding: 8rem 0;
         }
@@ -253,22 +268,7 @@
             display: none;
         }
 
-        .fullpage {
-            max-width: 100%;
-            display: grid;
-        }
 
-        .fullpage>img {
-            max-width: 90%;
-            height: auto;
-            margin: auto;
-        }
-
-
-        .fullpage>h2 {
-            font-size: 25px;
-            padding-bottom: 1.5em;
-        }
 
 
         .portfolio-bullets {
@@ -291,27 +291,8 @@
         }
 
 
-        h5 {
-            text-align: center;
-            font-size: 1.5rem;
-        }
-
-        .webpage {
-            display: flex;
-            max-width: 100%;
-            justify-content: space-around;
-        }
-
-        .webpage-images>img {
-            max-width: 100%;
-        }
 
 
-        .webpage-images p {
-            padding-top: 2%;
-            display: grid;
-            max-width: 50%;
-        }
 
 
         @media (max-width: 768px) {
@@ -382,36 +363,7 @@
                 display: none;
             }
 
-            .webpage {
-                display: inline;
-            }
 
-
-            .webpage-images p {
-                display: grid;
-                max-width: 50%;
-            }
-
-            .fullpage {
-                max-width: 100%;
-                display: inline-block;
-            }
-
-            .fullpage>img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .fullpage>h2 {
-                font-size: 25px;
-                padding-bottom: 2em;
-            }
-
-            .fullpage>h3 {
-                max-width: 90%;
-                font-size: 18px;
-                padding: 10px 30px;
-            }
 
             li a {
                 font-size: 1.1em;
@@ -457,23 +409,22 @@
         <section class="hero">
             <div class="portfolio">
                 <h1>Graphic<span style="color:#10b981;">Design
-                </span></h1>
+                    </span></h1>
                 <p>Our graphic design portfolio showcases a diverse range of visually stunning and
                     impactful projects. From eye-catching logos to compelling marketing materials.</p>
             </div>
         </section>
         <div class="marketing-images">
             <div class="box">
-                
+
             </div>
         </div>
         <div class="intro">
-            <h2 style="font-size:2rem;">Marketing Assets</h2>
             <p>From eye-catching social media graphics to compelling email campaigns, our marketing
                 assets are designed to captivate audiences and drive engagement. Each asset is crafted
                 with a focus on brand consistency and strategic messaging, ensuring that every piece of
                 content contributes to a cohesive and impactful marketing strategy.</p>
-        
+
             <div class="marketing-assets">
                 <div class="marketing-images">
                     <img src="marketing-assets/gotoh.webp" alt="gotoh guitar tuners">
@@ -491,8 +442,8 @@
                     <img src="marketing-assets/ease events scary clown.png" alt="scary halloween clown">
                     <img src="marketing-assets/new year champagne glasses.webp" loading="lazy"
                         alt="champagne glasses with happy new year">
-                    <img src="marketing-assets/red xmas tree end of year sale.webp" loading="lazy" alt=”christmas tree saying
-                        end of year sale”>
+                    <img src="marketing-assets/red xmas tree end of year sale.webp" loading="lazy" alt=”christmas tree
+                        saying end of year sale”>
                     <img src="marketing-assets/atelium man rings.webp" alt="man with rings on for an ad">
                     <img src="marketing-assets/Happy Holidays.png" loading="lazy"
                         alt="happy holidays white background big red bow">
@@ -505,29 +456,31 @@
                         alt="email campaign showing a glowing laptop saying the store is open">
                     <img src="marketing-assets/hands on hips atelium.png" loading="lazy"
                         alt="Asian woman with hands on hips showing jewelry">
-                    <img src="marketing-assets/Untitled design.png" loading="lazy" alt=”Thompson Lions Intermediate school news
-                        and events cover photo”>
-                    <img src="marketing-assets/red and white xmas ornaments.png" loading="lazy" alt=”white ornaments in the
-                        snow”>
-                    <img src="marketing-assets/easeevents bow (2021_05_16 06_25_34 UTC).png" loading="lazy" alt="big red bow">
+                    <img src="marketing-assets/Untitled design.png" loading="lazy" alt=”Thompson Lions Intermediate
+                        school news and events cover photo”>
+                    <img src="marketing-assets/red and white xmas ornaments.png" loading="lazy" alt=”white ornaments in
+                        the snow”>
+                    <img src="marketing-assets/easeevents bow (2021_05_16 06_25_34 UTC).png" loading="lazy"
+                        alt="big red bow">
                     <img src="marketing-assets/920 kb.png" loading="lazy" alt=”close up of hands crossed showing rings”>
                     <img src="marketing-assets/primo orange square.webp" loading="lazy"
                         alt="Primo branded orange guitar bodies">
                     <img src="marketing-assets/tom sawyer square.webp" loading="lazy"
                         alt="guitar necks with the words tom sawyer across it">
-        
-        
+
+
                     <img src="marketing-assets/Happy birthday osbt blue.png" loading="lazy"
                         alt="blue balloons saying happy bday osbt">
                     <img src="marketing-assets/happy bday onesource.png" loading="lazy"
                         alt="multi colored balloons saying happy birthday osbt">
-                    <img src="marketing-assets/Black Modern Coming Soon Twitter Post.webp" alt="Email Campaign 1" alt=”thompson
-                        lions football game announcement”>
-                    <img src="marketing-assets/True_tune_vintage.webp" loading="lazy" alt=”true tune branded guitar tuning
-                        keys”>
+                    <img src="marketing-assets/Black Modern Coming Soon Twitter Post.webp" alt="Email Campaign 1"
+                        alt=”thompson lions football game announcement”>
+                    <img src="marketing-assets/True_tune_vintage.webp" loading="lazy" alt=”true tune branded guitar
+                        tuning keys”>
                     <img src="marketing-assets/primo bodies and pickguards.png" loading="lazy"
                         alt="guitar bodies and pickguards with the word primo across the top">
-                    <img src="marketing-assets/Laptop drop off 4 squares.jpg" loading="lazy" alt=”laptop dropoff contact info”>
+                    <img src="marketing-assets/Laptop drop off 4 squares.jpg" loading="lazy" alt=”laptop dropoff contact
+                        info”>
                     <img src="marketing-assets/atelium-rings-man.jpg" alt="large ad of mans hands wearing gold rings">
                     <img src="marketing-assets/EASTER.webp" alt="easter basket with eggs">
                     <img src="marketing-assets/halloween 4 characters.png" loading="lazy"
@@ -540,12 +493,13 @@
                         alt="print ad about new telecommunications device available from osbt">
                 </div>
             </div>
-        
+
             <div class="banner-box">
                 <div class="banners">
                     <img src="marketing-assets/AllPart_Assets_Trapeze Banner 1880x888 (1).jpg" loading="lazy"
                         alt="Print Material 1">
-                    <img src="marketing-assets/AP_Badass_T1_Banner 1880x888-tinified.jpg" loading="lazy" alt="Print Material 1">
+                    <img src="marketing-assets/AP_Badass_T1_Banner 1880x888-tinified.jpg" loading="lazy"
+                        alt="Print Material 1">
                 </div>
             </div>
 </body>
