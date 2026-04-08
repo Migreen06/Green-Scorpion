@@ -17,11 +17,7 @@
             --mono-font: 'Mono', monospace;
         }
 
-        p {
-            font-size: 1rem;
-            line-height: 1rem;
-            max-width: 80%;
-        }
+        
 
         .hero>p {
             font-size: 1.25rem;
@@ -94,13 +90,6 @@
             }
         }
 
-        .reveal {
-            view-timeline-name: --reveal;
-            view-timeline-axis: block;
-            animation: reveal linear both;
-            animation-timeline: --reveal;
-            animation-range: entry 5% entry 35%;
-        }
 
         * {
             margin: 0;
@@ -220,20 +209,6 @@
             max-width: 100%;
             flex-wrap: wrap;
             justify-content: space-around;
-        }
-
-
-
-        @keyframes reveal {
-            from {
-                opacity: 0;
-                transform: translateY(50px) scale(0);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
         }
 
 
@@ -411,7 +386,7 @@
                     impactful projects. From eye-catching logos to compelling marketing materials.</p>
             </div>
         </section>
-        <div class="intro" style="max-width:80%;text-align:center;font-size:18px;padding:2rem;">
+        <div class="intro" style="max-width:80%;text-align:center;font-size:18px;padding:1rem;">
             <p>From eye-catching social media graphics to compelling email campaigns, our marketing
                 assets are designed to captivate audiences and drive engagement. Each asset is crafted
                 with a focus on brand consistency and strategic messaging, ensuring that every piece of
