@@ -12,34 +12,178 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        footer {
+            font-size: 15px;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    
+        :root {
+            --bg-color: radial-gradient(circle, #064e3b, #022c22, #000000);
+            --accent-color: #10b981;
+            --accent-glow: rgba(16, 185, 129, 0.4);
+            --text-main: #e5e5e5;
+            --text-dim: #a3a3a3;
+            --card-bg: #0a0f0d;
+            --border-color: #1a2e25;
+            --mono-font: 'mono', monospace;
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+    
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+    
+            to {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+    
+        body {
+            background: radial-gradient(circle, #022c22, #000000, #023729);
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+    
+    
+        body::before {
+            content: "GREEN SCORPION";
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 10vw;
+            font-weight: 700;
+            letter-spacing: -4px;
+            color: rgba(255, 255, 255, 0.08);
+            white-space: nowrap;
+            z-index: -1;
+            pointer-events: none;
+        }
+    
+    
+        .hero {
+            padding: 6rem 0 4rem 0;
+            text-align: center;
+            background: rgba(5, 10, 8, 0.8);
+        }
+    
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            font-style: italic;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+            animation: appear 2s ease-in;
+            margin-bottom: 2rem;
+        }
+    
+        .hero p {
+            max-width: 80%;
+            margin: 0 auto;
+            color: var(--text-dim);
+            font-size: 1.3rem;
+        }
+    
+        header {
+            padding: 1rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(5, 10, 8, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    
+        .logo {
+            display: flex;
+            font-weight: 900;
+            font-style: italic;
+            color: white;
+            justify-content: flex-start;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+        }
+    
+    
+        ul {
+            font-weight: 500;
+            list-style: none;
+            gap: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: space-between;
+            display: inline-flex;
+        }
+    
+    
+    
+        nav {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 2rem;
+        }
+    
+    
+        .content>p {
+            max-width: 80%;
+        }
+    
+        #menu-toggle,
+        label,
+        input {
+            display: none;
+        }
+        </style>
 </head>
 
 
-    <body class="bg-scorpion-gradient min-h-screen">
+    <body>
 
-        <header class="border-b border-emerald-900/50 backdrop-blur-md sticky top-0 z-50">
+        <header>
             <nav>
                 <a href="index.html">
                     <div class="group">
-                        <div class="w-10">
-                            <span class="text-black">GS</span>
+                        <img src="icons/logo.svg" width="36" height="36">
+                        <div class="logo">
+                            GREEN <span style="color:#10b981;padding-left:.5rem;"> SCORPION</span>
                         </div>
-        
-                        <h1> Green Scorpion
-                            <span class="web">Web Development</span>
-                        </h1>
                     </div>
                 </a>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="results.html">Results</a></li>
-                </ul>
-            </nav>
+                <div class="menu">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle">
+                        <img src="icons/menu.svg">
+                    </label>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                </nav>
             </header>
 
-        <script src="" async defer></script>
     </body>
     <footer>
         <p style="padding-top:50px; font-size:15px;">&copy; 2024 Green Scorpion Web Development. All rights reserved.</p>
